@@ -23,7 +23,14 @@
 - Vietsub (API Web hoặc API Dịch vụ web là một giao diện xử lý ứng dụng giữa máy chủ web và trình duyệt web. Mọi dịch vụ web đều là API nhưng không phải tất cả API đều là dịch vụ web. API REST là một loại API Web đặc biệt sử dụng phong cách kiến trúc tiêu chuẩn được giải thích ở trên.
 - Việc tồn tại các thuật ngữ khác nhau xoay quanh API - như API Java hoặc API dịch vụ - là do về mặt lịch sử, API được tạo ra trước mạng lưới toàn cầu. Các API web hiện đại là API REST và các thuật ngữ này có thể được dùng thay thế cho nhau.)
 
+# Detail Infomation
+- watching youtube 
+- PR{
 
+    - link : https://www.youtube.com/watch?v=fu3GuYFN1p8
+    - link2 : https://www.youtube.com/watch?v=U6Ayth8tCxI
+    - link3 : https://www.youtube.com/watch?v=N-4prIh7t38
+}
 
 
 
