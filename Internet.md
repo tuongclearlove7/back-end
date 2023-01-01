@@ -1,12 +1,12 @@
 # Internet documentation
 
-# Introduce about internet
+## Introduce about internet
 
 💬 What is Internet? (Internet là gì?) :
 - The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.
 - Vietsub (Internet là một mạng toàn cầu gồm các máy tính được kết nối với nhau, giao tiếp thông qua một bộ giao thức được tiêu chuẩn hóa.)
 
-# Working about Internet 
+## Working about Internet 
 
 💬 How does the Internet work? (Làm thế nào để làm việc với internet?)
 - Good question! The Internet's growth has become explosive and it seems impossible to escape the bombardment of www.com's seen constantly on television, heard on radio, and seen in magazines. Because the Internet has become such a large part of our lives, a good understanding is needed to use this new tool most effectively.
@@ -37,7 +37,7 @@ The picture below illustrates two computers connected to the Internet; your comp
 - Vietsub (Nếu bạn đang sử dụng Microsoft Windows hoặc phiên bản Unix và có kết nối với Internet, thì có một chương trình hữu ích để xem liệu một máy tính trên Internet còn hoạt động hay không. Nó được gọi là ping, có thể là theo âm thanh do các hệ thống sonar cũ của tàu ngầm tạo ra.1 Nếu bạn đang sử dụng Windows, hãy khởi động một cửa sổ nhắc lệnh. Nếu bạn đang sử dụng một hương vị của Unix, hãy đến dấu nhắc lệnh. Gõ ping www.yahoo.com. Chương trình ping sẽ gửi một 'ping' (thực ra là một thông báo yêu cầu lặp lại ICMP (Giao thức thông báo điều khiển Internet)) đến máy tính được đặt tên. Máy tính được ping sẽ trả lời bằng một câu trả lời. Chương trình ping sẽ đếm thời gian hết hạn cho đến khi có phản hồi trở lại (nếu có). Ngoài ra, nếu bạn nhập tên miền (tức là www.yahoo.com) thay vì địa chỉ IP, ping sẽ phân giải tên miền và hiển thị địa chỉ IP của máy tính. Thông tin thêm về tên miền và giải quyết địa chỉ sau.)
 
 
-# Detail Infomation
+## Detail Infomation
 
 - Watching Youtube
 

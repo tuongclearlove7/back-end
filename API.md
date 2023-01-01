@@ -1,6 +1,6 @@
 # API documentation
 
-⌚︎ About knowledge API
+## About knowledge API
 
 💬 What is API? (API là gì?) :
 
@@ -23,7 +23,7 @@
 - Vietsub (API Web hoặc API Dịch vụ web là một giao diện xử lý ứng dụng giữa máy chủ web và trình duyệt web. Mọi dịch vụ web đều là API nhưng không phải tất cả API đều là dịch vụ web. API REST là một loại API Web đặc biệt sử dụng phong cách kiến trúc tiêu chuẩn được giải thích ở trên.
 - Việc tồn tại các thuật ngữ khác nhau xoay quanh API - như API Java hoặc API dịch vụ - là do về mặt lịch sử, API được tạo ra trước mạng lưới toàn cầu. Các API web hiện đại là API REST và các thuật ngữ này có thể được dùng thay thế cho nhau.)
 
-# Detail Infomation
+## Detail Infomation
 
 - watching youtube 
 - PR channels ^^
