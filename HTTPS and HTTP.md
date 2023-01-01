@@ -55,9 +55,9 @@ Mỗi yêu cầu HTTP được thực hiện trên Internet mang theo một lo�
 5 Lỗi máy chủ 5xx
 - “xx” đề cập đến các số khác nhau giữa 00 và 99.
 
-Mã trạng thái bắt đầu bằng số '2' biểu thị thành công. Ví dụ: sau khi khách hàng yêu cầu một trang web, các phản hồi thường thấy nhất có mã trạng thái là '200 OK', cho biết rằng yêu cầu đã được hoàn thành đúng cách.
+- Mã trạng thái bắt đầu bằng số '2' biểu thị thành công. Ví dụ: sau khi khách hàng yêu cầu một trang web, các phản hồi thường thấy nhất có mã trạng thái là '200 OK', cho biết rằng yêu cầu đã được hoàn thành đúng cách.
 
-Nếu phản hồi bắt đầu bằng '4' hoặc '5', điều đó có nghĩa là đã xảy ra lỗi và trang web sẽ không được hiển thị. Mã trạng thái bắt đầu bằng số '4' biểu thị lỗi phía máy khách (rất phổ biến khi gặp phải mã trạng thái '404 KHÔNG TÌM THẤY' khi thực hiện lỗi đánh máy trong URL). Mã trạng thái bắt đầu bằng '5' có nghĩa là đã xảy ra sự cố ở phía máy chủ. Mã trạng thái cũng có thể bắt đầu bằng '1' hoặc '3', tương ứng cho biết phản hồi thông tin và chuyển hướng.)
+- Nếu phản hồi bắt đầu bằng '4' hoặc '5', điều đó có nghĩa là đã xảy ra lỗi và trang web sẽ không được hiển thị. Mã trạng thái bắt đầu bằng số '4' biểu thị lỗi phía máy khách (rất phổ biến khi gặp phải mã trạng thái '404 KHÔNG TÌM THẤY' khi thực hiện lỗi đánh máy trong URL). Mã trạng thái bắt đầu bằng '5' có nghĩa là đã xảy ra sự cố ở phía máy chủ. Mã trạng thái cũng có thể bắt đầu bằng '1' hoặc '3', tương ứng cho biết phản hồi thông tin và chuyển hướng.)
 
 ## Detail Infomation
 
