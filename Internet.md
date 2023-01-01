@@ -39,7 +39,7 @@ The picture below illustrates two computers connected to the Internet; your comp
 
 ## Detail Infomation
 
-- Watching Youtube
+- Watching Youtube (xem tài liệu và video kiến thức về internet trên youtube và website)
 
     - link : http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm
     - link : https://roadmap.sh/guides/what-is-internet

@@ -2,11 +2,12 @@
 
 ## Introduce about HTTP
 
-💬 What is HTTP? (HTTP là gì?) :
+💬 What is HTTP? (HTTP là gì?)
 - HTTP is the TCP/IP based application layer communication protocol which standardizes how the client and server communicate with each other. It defines how the content is requested and transmitted across the internet. 
 - Vietsub (HTTP là giao thức giao tiếp lớp ứng dụng dựa trên TCP/IP chuẩn hóa cách máy khách và máy chủ giao tiếp với nhau. Nó xác định cách nội dung được yêu cầu và truyền qua internet.)
 
-💬What is in an HTTP request?
+💬What is in an HTTP request? (yêu cầu HTTP là gì?)
+
 - An HTTP request is the way Internet communications platforms such as web browsers ask for the information they need to load a website.
 - Each HTTP request made across the Internet carries with it a series of encoded data that carries different types of information. A typical HTTP request contains:
 
@@ -28,7 +29,8 @@ Mỗi yêu cầu HTTP được thực hiện trên Internet mang theo một lo�
 
 - Hãy khám phá sâu hơn cách thức hoạt động của những yêu cầu này và cách thức sử dụng nội dung của yêu cầu để chia sẻ thông tin.)
 
-💬What is an HTTP method?
+💬What is an HTTP method? (phương thức HTTP là gì?)
+
 - An HTTP method, sometimes referred to as an HTTP verb, indicates the action that the HTTP request expects from the queried server. For example, two of the most common HTTP methods are ‘GET’ and ‘POST’; a ‘GET’ request expects information back in return (usually in the form of a website), while a ‘POST’ request typically indicates that the client is submitting information to the web server (such as form information, e.g. a submitted username and password).
 - Vietsub (Phương thức HTTP, đôi khi được gọi là động từ HTTP, cho biết hành động mà yêu cầu HTTP mong đợi từ máy chủ được truy vấn. Ví dụ: hai trong số các phương thức HTTP phổ biến nhất là 'GET' và 'POST'; yêu cầu 'NHẬN' yêu cầu trả lại thông tin (thường ở dạng trang web), trong khi yêu cầu 'POST' thường chỉ ra rằng khách hàng đang gửi thông tin đến máy chủ web (chẳng hạn như thông tin biểu mẫu, ví dụ: tên người dùng và mật khẩu đã gửi.)
 
@@ -61,7 +63,7 @@ Mỗi yêu cầu HTTP được thực hiện trên Internet mang theo một lo�
 
 ## Detail Infomation
 
-- Watching Youtube
+- Watching Youtube (xem tài liệu và video kiến thức về HTTP trên youtube và website)
 
     - link : https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/
     - link : https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
