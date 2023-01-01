@@ -24,6 +24,7 @@
 - Việc tồn tại các thuật ngữ khác nhau xoay quanh API - như API Java hoặc API dịch vụ - là do về mặt lịch sử, API được tạo ra trước mạng lưới toàn cầu. Các API web hiện đại là API REST và các thuật ngữ này có thể được dùng thay thế cho nhau.)
 
 # Detail Infomation
+
 - watching youtube 
 - PR channels 
 
