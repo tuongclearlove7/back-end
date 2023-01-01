@@ -22,6 +22,19 @@
     <img width="800" height="350" src="https://www.guru99.com/images/1/091318_0717_WhatisBacke2.png"></img>
 </a>
 
+
+## DEV Back-End Progamming 
+
+ <kbd>
+    <kbd>Back-end</kbd>
+    <br>
+    <br>
+    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" />
+  </kbd>
+
 ## Summary
 
 - Back end Development refers to the server-side development
