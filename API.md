@@ -26,7 +26,7 @@
 # Detail Infomation
 
 - watching youtube 
-- PR channels 
+- PR channels ^^
 
     - link : https://www.youtube.com/watch?v=s7wmiS2mSXY
     - link : https://www.youtube.com/watch?v=fu3GuYFN1p8
