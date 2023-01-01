@@ -33,8 +33,7 @@ The picture below illustrates two computers connected to the Internet; your comp
 |if you enter a domain name (i.e. www.yahoo.com) instead of an IP address,                        |
 |ping will resolve the domain name and display the computer's IP address.                         |
 |More on domain names and address resolution later.                                               |
-|                                                                                                 |
-|-------------------------------------------------------------------------------------------------|
+---------------------------------------------------------------------------------------------------
 - Vietsub (Nếu bạn đang sử dụng Microsoft Windows hoặc phiên bản Unix và có kết nối với Internet, thì có một chương trình hữu ích để xem liệu một máy tính trên Internet còn hoạt động hay không. Nó được gọi là ping, có thể là theo âm thanh do các hệ thống sonar cũ của tàu ngầm tạo ra.1 Nếu bạn đang sử dụng Windows, hãy khởi động một cửa sổ nhắc lệnh. Nếu bạn đang sử dụng một hương vị của Unix, hãy đến dấu nhắc lệnh. Gõ ping www.yahoo.com. Chương trình ping sẽ gửi một 'ping' (thực ra là một thông báo yêu cầu lặp lại ICMP (Giao thức thông báo điều khiển Internet)) đến máy tính được đặt tên. Máy tính được ping sẽ trả lời bằng một câu trả lời. Chương trình ping sẽ đếm thời gian hết hạn cho đến khi có phản hồi trở lại (nếu có). Ngoài ra, nếu bạn nhập tên miền (tức là www.yahoo.com) thay vì địa chỉ IP, ping sẽ phân giải tên miền và hiển thị địa chỉ IP của máy tính. Thông tin thêm về tên miền và giải quyết địa chỉ sau.)
 
 
