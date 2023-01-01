@@ -36,6 +36,7 @@
 - Các nhà phát triển và ứng dụng khách có thể tương tác với các API giả giống như cách họ tương tác với các API thực. Tuy nhiên, "giả" không cung cấp các tương tác xác thực. Đây là một nhược điểm phổ biến của việc sử dụng API giả. Trước khi chúng ta thảo luận về những nhược điểm, hãy để tôi giải thích những ưu điểm của API giả.)
 
 - link : https://github.com/typicode/json-server
+- link : https://rapidapi.com/blog/mock-api/
 
 ## Detail Infomation
 
