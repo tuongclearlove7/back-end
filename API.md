@@ -12,7 +12,7 @@
 - Vietsub (API là cụm viết tắt của Giao diện chương trình ứng dụng. Trong ngữ cảnh API, từ “Ứng dụng” đề cập đến mọi phần mềm có chức năng riêng biệt. Giao diện có thể được xem là một hợp đồng dịch vụ giữa 2 ứng dụng. Hợp đồng này xác định cách thức hai ứng dụng giao tiếp với nhau thông qua các yêu cầu và phản hồi. Tài liệu API của các ứng dụng này chứa thông tin về cách nhà phát triển xây dựng cấu trúc cho những yêu cầu và phản hồi đó.)
 
 💬 What is API REST? (API REST là gì?) : 
-- REST is an acronym for Representative State Transition. REST defines a set of functions like GET, PUT, DELETE, etc. that the client can use to access the server's data. Client and server exchange data over HTTP protocol.
+- REST is an acronym for (REpresentative State Transition). REST defines a set of functions like GET, PUT, DELETE, etc. that the client can use to access the server's data. Client and server exchange data over HTTP protocol.
 - The main feature of the REST API is statelessness. Stateless means that the server does not save client data between requests. The requests that the client sends to the server are similar to the URL you enter in your browser to access the website. The response from the server is pure data and not rendered into graphics as is often the case on a web page.
 - Vietsub (REST là từ viết tắt của Chuyển trạng thái đại diện. REST xác định một tập hợp các hàm như GET, PUT, DELETE, v.v. mà máy khách có thể dùng để truy cập vào dữ liệu của máy chủ. Máy khách và máy chủ trao đổi dữ liệu qua giao thức HTTP.
 - Tính năng chính của API REST là tính không trạng thái. Tính không trạng trái nghĩa là máy chủ không lưu dữ liệu của máy khách giữa các yêu cầu. Các yêu cầu mà máy khách gửi cho máy chủ tương tự như URL mà bạn nhập vào trình duyệt để truy cập vào trang web. Phản hồi từ máy chủ là dữ liệu thuần chứ không được kết xuất thành đồ họa như thường thấy trên trang web.)
@@ -27,9 +27,10 @@
 - watching youtube 
 - PR channels 
 
+    - link : https://www.youtube.com/watch?v=s7wmiS2mSXY
     - link : https://www.youtube.com/watch?v=fu3GuYFN1p8
-    - link2 : https://www.youtube.com/watch?v=U6Ayth8tCxI
-    - link3 : https://www.youtube.com/watch?v=N-4prIh7t38
+    - link : https://www.youtube.com/watch?v=U6Ayth8tCxI
+    - link : https://www.youtube.com/watch?v=N-4prIh7t38
 
 
 
