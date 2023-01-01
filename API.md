@@ -23,6 +23,16 @@
 - Vietsub (API Web hoặc API Dịch vụ web là một giao diện xử lý ứng dụng giữa máy chủ web và trình duyệt web. Mọi dịch vụ web đều là API nhưng không phải tất cả API đều là dịch vụ web. API REST là một loại API Web đặc biệt sử dụng phong cách kiến trúc tiêu chuẩn được giải thích ở trên.
 - Việc tồn tại các thuật ngữ khác nhau xoay quanh API - như API Java hoặc API dịch vụ - là do về mặt lịch sử, API được tạo ra trước mạng lưới toàn cầu. Các API web hiện đại là API REST và các thuật ngữ này có thể được dùng thay thế cho nhau.)
 
+## Fake API (MOCK API)
+
+💬what is fake API? (fake API là gì?)
+- With APIs, to mock is to copy or imitate. (Fake), Mock APIs provide predefined API responses for client applications. For example, think of an application that has a database. We may want to create a mock API for that database that returns example data representations. Therefore, we can take a handful of common data objects from the database and place them into a mock API.
+- Developers and client applications can interact with mock APIs the same way they interact with real APIs. However, “mocks” do not provide authentic interactions. This is a common drawback of using mocks APIs. Before we discuss the disadvantages, let me explain the advantages of mock APIs.
+- Vietsub (Với API, giả lập là sao chép hoặc bắt chước. Mock API cung cấp các phản hồi API được xác định trước cho các ứng dụng khách. Ví dụ, hãy nghĩ về một ứng dụng có cơ sở dữ liệu. Chúng tôi có thể muốn tạo một API mô phỏng cho cơ sở dữ liệu đó để trả về các biểu diễn dữ liệu mẫu. Do đó, chúng ta có thể lấy một số đối tượng dữ liệu phổ biến từ cơ sở dữ liệu và đặt chúng vào một API giả.
+- Các nhà phát triển và ứng dụng khách có thể tương tác với các API giả giống như cách họ tương tác với các API thực. Tuy nhiên, "giả" không cung cấp các tương tác xác thực. Đây là một nhược điểm phổ biến của việc sử dụng API giả. Trước khi chúng ta thảo luận về những nhược điểm, hãy để tôi giải thích những ưu điểm của API giả.)
+
+- link : https://github.com/typicode/json-server
+
 ## Detail Infomation
 
 - watching youtube 
@@ -33,6 +43,7 @@
     - link : https://www.youtube.com/watch?v=U6Ayth8tCxI
     - link : https://www.youtube.com/watch?v=N-4prIh7t38
     - link : https://www.youtube.com/watch?v=CvX_5uyUXSs
+    - link : https://www.youtube.com/watch?v=5UJGRHNZc9M
 
 
 
