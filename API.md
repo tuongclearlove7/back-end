@@ -25,12 +25,12 @@
 
 # Detail Infomation
 - watching youtube 
-- PR{
+- PR channels 
 
     - link : https://www.youtube.com/watch?v=fu3GuYFN1p8
     - link2 : https://www.youtube.com/watch?v=U6Ayth8tCxI
     - link3 : https://www.youtube.com/watch?v=N-4prIh7t38
-}
+
 
 
 
