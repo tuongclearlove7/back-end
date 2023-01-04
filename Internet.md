@@ -1,6 +1,6 @@
 # Internet documentation
 
-## Introduce about internet
+## Introduce internet
 
 💬 What is Internet? (Internet là gì?) :
 - The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.
