@@ -16,7 +16,7 @@
 
 ```
 
-### Documentation detail
+### Detail documentation 
 
 https://github.com/typicode/json-server
 
