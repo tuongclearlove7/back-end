@@ -8,7 +8,7 @@
 
 ## Detail Infomation
 
--       link : https://www.youtube.com/watch?v=HLEu57iLrRo&list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3&index=3
+       link : https://www.youtube.com/watch?v=HLEu57iLrRo&list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3&index=3
 
 
 
