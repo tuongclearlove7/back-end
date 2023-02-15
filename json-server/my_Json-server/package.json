@@ -1,7 +1,7 @@
 {
-  "name": "json-server",
+  "name": "my_json-server",
   "version": "1.0.0",
-  "description": "this is my json server",
+  "description": "this is my json-server",
   "main": "index.js",
   "scripts": {
     "start" : "json-server --watch data.json",
