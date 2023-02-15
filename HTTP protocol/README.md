@@ -71,3 +71,4 @@ Mỗi yêu cầu HTTP được thực hiện trên Internet mang theo một lo�
     - link : https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/
     - link : https://www.youtube.com/watch?v=a-sBfyiXysI
     - link : https://www.youtube.com/watch?v=iYM2zFP3Zn0
+    - link : https://www.youtube.com/watch?v=SdcdneSdoV4&list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3&index=2
