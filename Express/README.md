@@ -4,11 +4,11 @@
 
 ## Tutorial for settings express Node Js
 
-        settings express node Js 
+        Settings express node Js 
         Usage
-        - step 1 : npm init 
-        - step 2 : npm install express
-        - step 3 : create file server.js
+        - Step 1 : npm init 
+        - Step 2 : npm install express
+        - Step 3 : create file server.js
         - Content in file server.js is
 ```js
         
