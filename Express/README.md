@@ -6,6 +6,7 @@
 
         Settings express node Js 
         Usage
+
         - Step 1 : npm init 
         - Step 2 : npm install express
         - Step 3 : create file server.js
@@ -29,6 +30,11 @@
         
         
 ```
+        Settings nodemon node Js 
+        Usage
+
+        - Step 1 : npm install nodemon --save-dev
+        - Step 2 : edit file package.json at script add "start": "nodemon --inspect server.js"
 
 
 
