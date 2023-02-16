@@ -4,6 +4,7 @@
   "description": "this is my project express node Js",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon --inspect server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "clearlove7",
