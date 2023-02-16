@@ -4,7 +4,7 @@ const port = 8080
 
 
 //route : tuyến đường
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
 
     res.send('Hello World!')
 })

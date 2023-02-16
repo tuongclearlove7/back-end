@@ -4,8 +4,8 @@
 
 ## Tutorial for settings express Node Js
 
-        - settings express node Js 
-        - use command line
+        settings express node Js 
+        Usage
         - step 1 : npm init 
         - step 2 : npm install express
         - step 3 : create file server.js
