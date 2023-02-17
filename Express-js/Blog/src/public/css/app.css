@@ -1,5 +1,17 @@
 h1 {
+  text-align: center;
   color: red; }
 
 h2 {
-  color: #171717; }
+  position: fixed;
+  display: block;
+  left: -80px;
+  float: left;
+  margin: auto;
+  text-align: center;
+  padding: 80px;
+  bottom: 0px;
+  color: #ff0000;
+  width: 100%;
+  background-color: #242426;
+  border: 1px solid black; }

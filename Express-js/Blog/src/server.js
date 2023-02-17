@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const path = require('path')
 const handlebars = require('express-handlebars');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.use(express.static(path.join(__dirname,'public')));
  
@@ -17,7 +17,6 @@ app.engine('cl7', handlebars.engine({
 }));
 app.set('view engine','cl7');
 app.set('views', path.join(__dirname, 'resources/views'));
-console.log(path.join(__dirname + 'resources/views'))
 
 
 //route : tuyến đường
@@ -30,10 +29,22 @@ app.get('/news', (req, res) => {
     res.render('news');
 });
 
-app.listen(port, () => {
 
-    console.log(`Example app listening at http://localhost:${port}`)
-});
+const applications = (function(){
+
+    return{
+
+        get(){
+
+            console.log(`Example app listening at http://localhost:${port}`)
+
+        }
+
+    }
+    
+})()
+
+app.listen(port,applications.get());
 
 
 
