@@ -163,7 +163,7 @@ Các ngôn ngữ mà nhà phát triển front-end nên quen thuộc là HTML, CS
 ## Contact me
 
 
-
+<div align="center">
 
 <a style="text-align:center;"  href="https://github.com/tuongclearlove7">GitHub </a><img src="https://img.shields.io/static/v1?label=&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF"/>
 
