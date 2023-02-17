@@ -5,7 +5,7 @@
 ## Backend Developer
 
 <a>
-    <img width="800" height="400" src="https://nhaxinhplaza.vn/wp-content/uploads/back-end-can-hoc-gi.png"></img>
+    <img width="800" height="400" src="https://nhaxinhplaza.vn/wp-content/uploads/back-end-can-hoc-gi.png">
 </a>
 
 ## Development Back-End
@@ -15,13 +15,13 @@
 - Back-end Development refers to the server-side development. It focuses on databases, scripting, website architecture. It contains behind-the-scene activities that occur when performing any action on a website. It can be an account login or making a purchase from an online store. Code written by back-end developers helps browsers to communicate with database information.
 - Vietsub (Phát triển back-end đề cập đến sự phát triển phía máy chủ. Nó tập trung vào cơ sở dữ liệu, kịch bản, kiến ​​trúc trang web. Nó chứa các hoạt động hậu trường xảy ra khi thực hiện bất kỳ hành động nào trên trang web. Nó có thể là đăng nhập tài khoản hoặc mua hàng từ một cửa hàng trực tuyến. Mã được viết bởi các nhà phát triển back-end giúp các trình duyệt giao tiếp với thông tin cơ sở dữ liệu.)
 <a>
-    <img width="800" height="350" src="https://www.guru99.com/images/1/091318_0717_WhatisBacke1.png"></img>
+    <img width="800" height="350" src="https://www.guru99.com/images/1/091318_0717_WhatisBacke1.png">
 </a>
 
 ### Skill You Need to Become a Backend Developer
 
 <a>
-    <img width="800" height="350" src="https://www.guru99.com/images/1/091318_0717_WhatisBacke2.png"></img>
+    <img width="800" height="350" src="https://www.guru99.com/images/1/091318_0717_WhatisBacke2.png">
 </a>
 
 
