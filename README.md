@@ -41,8 +41,6 @@
     <img width="30px" src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/eb9e3b7dab09358e7cf13f188f64f9f4.png" />
 
 
-  </kbd>
-
 ### Framework & Library
 
     Recomend using
