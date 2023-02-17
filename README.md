@@ -164,20 +164,15 @@ Các ngôn ngữ mà nhà phát triển front-end nên quen thuộc là HTML, CS
 
 ## Contact me
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    Github
-
-<a width="100px" height="100px" class="fa fa-github" href="https://github.com/tuongclearlove7"></a>
-
-    Facebook
-
-<a width="100px" height="100px" class="fa fa-facebook-square"href="https://www.facebook.com/Ytttuong1/" ></a>
 
 
-    Intagram
 
-<a width="100px" height="100px" class="fa fa-instagram" href="https://www.instagram.com/"></a>
+<a width="100px" height="100px" class="fa fa-github" href="https://github.com/tuongclearlove7">
+
+<img src="https://img.shields.io/static/v1?label=&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF"/>
+
+</a>
+
 
 
 
