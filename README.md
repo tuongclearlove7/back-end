@@ -47,25 +47,50 @@
 
     Recomend using
 
-    ```js
-    
-        Npm
-    
-        express Js
+```js
+        
+    const express = require('express')
+    const app = express()
+    const port = 8080
 
-        nodemon
+    //route : tuyến đường
+    app.get('/home', (req, res) => {
 
-        express-handlebars
+        res.send('Hello World!')
+    })
 
-        node-sass
+    app.listen(port, () => {
 
-        morgan
+        console.log(`Example app listening at http://localhost:${port}`)
+    });
+        
+        
 
-        pug
+        Settings nodemon node Js 
+        Usage
+
+        npm install nodemon --save-dev
+        edit file package.json at script add "start": "nodemon --inspect server.js"
+
+        Settings morgan node Js 
+        Usage
+
+        npm install morgan --save-dev
+
+        Settings express-handlebars node Js 
+        Usage
+
+        npm install express-handlebars
+
+        Settings node-sass node Js 
+        Usage
+
+        npm install node-sass --save-dev
 
         ...
 
-    ```
+
+```
 
 ## Summary
 
