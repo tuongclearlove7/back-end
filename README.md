@@ -1,5 +1,3 @@
-<body style="color:black;">
-
 # Knowledge Back-End
 
 # Road map https://roadmap.sh/
@@ -167,7 +165,7 @@ Các ngôn ngữ mà nhà phát triển front-end nên quen thuộc là HTML, CS
 
 
 
-</body>
+
 
 
 
