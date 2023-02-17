@@ -171,7 +171,7 @@ Các ngôn ngữ mà nhà phát triển front-end nên quen thuộc là HTML, CS
 
 <img src="https://img.shields.io/static/v1?label=&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF"/>
 
-
+<br>
 
 <a style="text-align:center;" href="https://www.facebook.com/Ytttuong1/">Facebook </a>
 
@@ -179,7 +179,7 @@ Các ngôn ngữ mà nhà phát triển front-end nên quen thuộc là HTML, CS
 
 <img src="https://img.shields.io/static/v1?label=&message=Facebook&color=181717&logo=Facebook&logoColor=FFFFFF"/>
 
-
+<br>
 
 <a style="text-align:center;"  href="https://www.instagram.com/warkeryt/">Instagram </a>
 
