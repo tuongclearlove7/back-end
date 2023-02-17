@@ -162,11 +162,20 @@ Nhà phát triển web phụ trợ nên hiểu mục tiêu của trang web và �
 Các ngôn ngữ mà nhà phát triển front-end nên quen thuộc là HTML, CSS và JavaScript trong khi nhà phát triển web Back End phải quen thuộc với cơ sở dữ liệu, Máy chủ, API, v.v.
 - Dịch vụ phát triển giao diện người dùng không thể được cung cấp độc lập nhưng dịch vụ phát triển web phụ trợ có thể được cung cấp độc lập.)
 
+## Contatc me
+
+    Github
+
+<a width="100px" height="100px" class="fa fa-github" href="https://github.com/tuongclearlove7"></a>
+
+    Facebook
+
+<a width="100px" height="100px" class="fa fa-facebook-square"href="https://www.facebook.com/Ytttuong1/" ></a>
 
 
+    Intagram
 
-
-
+<a class="fa fa-instagram" href="https://www.instagram.com/"></a>
 
 
 
