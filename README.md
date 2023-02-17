@@ -167,19 +167,19 @@ Các ngôn ngữ mà nhà phát triển front-end nên quen thuộc là HTML, CS
 
 
 
-<a width="100px" height="100px" class="fa fa-github" href="https://github.com/tuongclearlove7">
+<a  href="https://github.com/tuongclearlove7">GitHub </a>
 
 <img src="https://img.shields.io/static/v1?label=&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF"/>
 
 
 
-<a width="100px" height="100px" class="fa fa-github" href="https://www.facebook.com/Ytttuong1/">
+<a href="https://www.facebook.com/Ytttuong1/">Facebook </a>
 
 <img src="https://img.shields.io/static/v1?label=&message=Facebook&color=181717&logo=Facebook&logoColor=FFFFFF"/>
 
 
 
-<a width="100px" height="100px" class="fa fa-github" href="https://www.instagram.com/warkeryt/">
+<a  href="https://www.instagram.com/warkeryt/">Instagram </a>
 
 <img src="https://img.shields.io/static/v1?label=&message=Instagram&color=181717&logo=Instagram&logoColor=FFFFFF"/>
 
