@@ -48,24 +48,8 @@
     Recomend using
 
 ```js
+                
         
-    const express = require('express')
-    const app = express()
-    const port = 8080
-
-    //route : tuyến đường
-    app.get('/home', (req, res) => {
-
-        res.send('Hello World!')
-    })
-
-    app.listen(port, () => {
-
-        console.log(`Example app listening at http://localhost:${port}`)
-    });
-        
-        
-
         Settings nodemon node Js 
         Usage
 
@@ -91,6 +75,79 @@
 
 
 ```
+
+```python
+
+    pip install djangorestframework
+    pip install markdown       # Markdown support for the browsable API.
+    pip install django-filter
+
+    INSTALLED_APPS = [
+    ...
+    'rest_framework',
+    ]
+
+
+    urlpatterns = [
+    ...
+    path('api-auth/', include('rest_framework.urls'))
+    ]
+
+    Example
+
+    REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        ]
+    }
+
+```
+
+```java
+
+    @SpringBootApplication
+    @RestController
+
+    public class DemoApplication {
+
+        @GetMapping("/helloworld")
+
+            public String hello() {
+        
+                return"Hello World!";
+            }
+    }
+
+    package com.example.demo;
+    import org.springframework.boot.SpringApplication;
+    import org.springframework.boot.autoconfigure.SpringBootApplication;
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.RequestParam;
+    import org.springframework.web.bind.annotation.RestController;
+
+    @SpringBootApplication
+    @RestController
+
+    public class DemoApplication {
+
+        public static void main(String[] args) {
+
+                SpringApplication.run(DemoApplication.class, args);
+    }
+    @GetMapping("/hello")
+
+        public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+        
+            return String.format("Hello %s!", name);
+        }
+}
+
+
+```
+
+...
 
 ## Summary
 
