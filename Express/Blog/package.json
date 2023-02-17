@@ -2,17 +2,21 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "this is my project express node Js",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "nodemon --inspect server.js",
+    "start": "nodemon --inspect src/server.js",
+    "watch": "node-sass --w src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "clearlove7",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
   }
 }

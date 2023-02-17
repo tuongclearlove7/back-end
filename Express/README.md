@@ -7,10 +7,10 @@
         Settings express node Js 
         Usage
 
-        - Step 1 : npm init 
-        - Step 2 : npm install express
-        - Step 3 : create file server.js
-        - Content in file server.js is
+        npm init 
+        npm install express
+        create file server.js
+        Content in file server.js is
 ```js
         
     const express = require('express')
@@ -29,21 +29,30 @@
     });
         
         
-```
+
         Settings nodemon node Js 
         Usage
 
-        - Step 1 : npm install nodemon --save-dev
-        - Step 2 : edit file package.json at script add "start": "nodemon --inspect server.js"
+        npm install nodemon --save-dev
+        edit file package.json at script add "start": "nodemon --inspect server.js"
+
+        Settings morgan node Js 
+        Usage
+
+        npm install morgan --save-dev
+
+        Settings express-handlebars node Js 
+        Usage
+
+        npm install express-handlebars
+
+        Settings node-sass node Js 
+        Usage
+
+        npm install node-sass --save-dev
 
 
-
-
-
-
-
-
-
+```
 
 
 
