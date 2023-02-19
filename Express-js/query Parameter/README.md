@@ -1,4 +1,4 @@
-# Introduction quyry parameters
+# Introduction query parameters
 
 ### Structure 
 
