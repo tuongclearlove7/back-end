@@ -10,7 +10,7 @@
 
 ``` js
 
-url example : http://localhost:8080/search?user=profile%20tuongclearlove7&ref=blog&author=clearlove7
+url example : http://localhost:8080/search?user=tuongclearlove7&ref=blog&author=clearlove7
 
 app.get('/search', (req, res) => {
 
