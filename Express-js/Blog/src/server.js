@@ -32,11 +32,18 @@ app.get('/news', (req, res) => {
 
 const applications = (function(){
 
+    var user = {
+
+
+        local : `Example app listening at http://localhost:${port}`,
+
+    }
+
     return{
 
-        get(){
+        run(){
 
-            console.log(`Example app listening at http://localhost:${port}`)
+            console.log(user.local)
 
         }
 
@@ -44,7 +51,7 @@ const applications = (function(){
     
 })()
 
-app.listen(port,applications.get());
+app.listen(port,applications.run());
 
 
 
