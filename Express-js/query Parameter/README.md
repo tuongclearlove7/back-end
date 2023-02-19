@@ -1,5 +1,7 @@
 # Introduction query parameters
 
+- Query parameters are a defined set of parameters attached to the end of a url. They are extensions of the URL that are used to help define specific content or actions based on the data being passed. To append query params to the end of a URL, a ‘?’ Is added followed immediately by a query parameter.
+
 ### Structure 
 
 -    https//www.domain.com/page?key1=value1&key2=value2 
