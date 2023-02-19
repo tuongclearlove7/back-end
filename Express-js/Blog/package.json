@@ -7,6 +7,7 @@
     "start": "nodemon --inspect src/server.js",
     "watch": "node-sass --w src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "author": "clearlove7",
   "license": "ISC",

@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 
 app.use(express.static(path.join(__dirname,'public')));
  
-app.use(morgan('combined'));
+//app.use(morgan('combined'));
 
 //config : cấu hình
 app.engine('cl7', handlebars.engine({
@@ -24,11 +24,24 @@ app.get('/', (req, res) => {
 
     res.render('home');
 });
+
+app.post('/', (req, res) => {
+
+    res.send(`Example app listening at http://localhost:${port}`);
+});
+
+
 app.get('/news', (req, res) => {
 
     res.render('news');
 });
 
+app.get('/search', (req, res) => {
+
+    console.log(req.query);
+
+    res.render('search');
+});
 
 const applications = (function(){
 
