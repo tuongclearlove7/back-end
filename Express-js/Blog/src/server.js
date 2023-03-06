@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 
 app.use(express.static(path.join(__dirname,'public')));
  
-//app.use(morgan('combined'));
+app.use(morgan('combined'));
 
 //config : cấu hình
 app.engine('cl7', handlebars.engine({
