@@ -13,8 +13,9 @@
 ### Tutorial knowledge git
 
 ```javascript
-- identify location 
+- identify location  
 - enter command line => git init 
+- show directory => ls , dir
 - make folder => mkdir name folder
 
 - example : mkdir myfolder
