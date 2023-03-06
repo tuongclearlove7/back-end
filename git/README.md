@@ -15,6 +15,12 @@
 ```javascript
 - identify location 
 - enter command line => git init 
+- make folder => mkdir name folder
+
+- example : mkdir myfolder
+
+delete folder => rm -r myfolder
+
 - create a new file in the folder by command line of git 
 - step 1 : come to the folder create file
 - step 2 : enter command line => touch file.html, file.js ...  
