@@ -4,7 +4,6 @@
 - Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 
-
 ## Detail Infomation
 
 -   link : https://www.youtube.com/watch?v=zbKdDsNNOhg
@@ -12,6 +11,8 @@
 -   link : https://github.com/jlord/git-it-electron
 
 ### Tutorial knowledge git
+
+```javascript
 - identify location 
 - enter command line => git init 
 - create a new file in the folder by command line of git 
@@ -25,3 +26,4 @@
 
 - git stutus
 - enter command line => git status
+```
