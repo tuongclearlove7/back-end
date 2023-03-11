@@ -15,7 +15,7 @@
          ^YYJ!!JYY~                                             
         !YYY:  :YYY~                                            
       .7Y?7~    ~7?J~.                                          
-      ^:.          .^^  
+      ^:.          .^^   
 
 command print console echo example
 clean console cls , linux : clear
