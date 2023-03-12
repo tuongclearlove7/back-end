@@ -47,6 +47,7 @@ example : cp filename.txt /home/username/Documents
 
 ## Detail
 
+- Linux Command
 
 <img width="600px" height="300px" src="./image/commands.png">
 
