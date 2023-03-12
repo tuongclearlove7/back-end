@@ -51,7 +51,11 @@ example : cp filename.txt /home/username/Documents
 
 <img width="600px" height="300px" src="./image/commands.png">
 
-
+  - link : https://www.hostinger.com/tutorials/linux-commands
+    - link : https://github.com/ibraheemdev/modern-unix
+      - link : https://www.learnenough.com/command-line-tutorial
+        - link : https://cmdchallenge.com/
+          - link : https://www.youtube.com/watch?v=ZtqBQ68cfJc
 
 
 
