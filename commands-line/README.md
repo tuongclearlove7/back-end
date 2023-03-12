@@ -20,7 +20,7 @@
 command print console echo example
 clean console cls , linux : clear
 command : cd 
-example : cd/folder/ , linux and window
+example : cd folder , linux and window
 command : cd .. , linux and window
 => out folder
 example : cd.. => out /folder/
