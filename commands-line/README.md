@@ -41,17 +41,27 @@ Here are other ways to use the cat command:
 cp command
 example : cp filename.txt /home/username/Documents
 
-
 ...
 
-
-
-
-
-
-
-
-
-
-
 ```
+
+## Detail
+
+
+<img width="600px" height="300px" src="./image/commands.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
