@@ -20,7 +20,7 @@
 ```js
 
        * đối với Client-side rendering vì đc render ra từ scripts <file js>.
-       - nếu chúng ta tắt scripts của trình duyệt đi thì trang web sẽ lỗi vì scripts đã bị tắt
+       - nếu chúng ta tắt scripts của trình duyệt đi thì trang web sẽ lỗi và mất một số phần hiển thị vì scripts đã bị tắt
 
 ```
 
