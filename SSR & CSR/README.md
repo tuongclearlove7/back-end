@@ -24,7 +24,9 @@
 
 ```
 
-## Close scripts
+## Close scripts 
+
+- tutorial turn on client-side rendering & server-side rendering and turn off client-side rendering & server-side rendering
 
 ```js
 
