@@ -88,6 +88,11 @@
       "img": "https://careerkarma.com/blog/wp-content/uploads/2019/07/what-is-ruby-used-for.png",
       "text": "Rails.application.routes.draw do\n  resources :brands, only: [:index, :show] do\n    resources :products, only: [:index, :show]\n  end\n\n  resource :basket, only: [:show, :update, :destroy]\n\n  resolve(\"Basket\") { route_for(:basket) }\nend",
       "id": 5
+    },
+    {
+      "img": "https://careerkarma.com/blog/wp-content/uploads/2019/07/what-is-ruby-used-for.png",
+      "text": "Rails.application.routes.draw do\n  resources :brands, only: [:index, :show] do\n    resources :products, only: [:index, :show]\n  end\n\n  resource :basket, only: [:show, :update, :destroy]\n\n  resolve(\"Basket\") { route_for(:basket) }\nend",
+      "id": 6
     }
   ],
   "about": [
