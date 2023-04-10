@@ -1,42 +1,48 @@
 const socket = io();
-const messageContainer = document.getElementById('message-container');
-const messageForm = document.getElementById('send-container');
-const messageInput = document.getElementById('message-input');
-const countUser = document.getElementById('count-user');
+const chatForm = document.getElementById('chat-form');
+const chatMessages = document.querySelector('.chat-messages');
+
 
 const name = prompt('What is your name?');
-sendMessage(`You joined`);
-socket.emit('new-user', name);
+var username = [];
+socket.emit('new-user',name);
+sendMessage(`<h4 style='color:grey;'>you joined<h4>`);
 
-socket.on('chat-message', data => {
-    console.log(data);
+socket.on('message', data => {
+
     sendMessage(`${data.name}: ${data.message}`);
+    
+    chatMessages.scrollTop = chatMessages.scrollHeight;
 });
 
 socket.on('user-connected', data => {
-    countUser.innerHTML = `so nguoi trong room ${data.count}`;
+
     console.log(`User : ${data.count}`);
     sendMessage(`${data.name} is comming room chat`);
-    
+   
 });
 
 socket.on('user-disconnected', data => {
-    countUser.innerHTML = `so nguoi trong room ${data.count}`;
     console.log(`User : ${data.count}`);
     sendMessage(`${data.name} out room chat`);
    
 });
-
-messageForm.addEventListener('submit', e => {
+ 
+chatForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const message = messageInput.value
-    sendMessage(`You: ${message}`);
-    socket.emit('send-chat-message', message);
-    messageInput.value = '';
+    const msg = e.target.elements.msg.value;
+    socket.emit('chatMessage',msg);
+    sendMessage(`You : ${msg}`);
+    e.target.elements.msg.value = " ";
+    e.target.elements.msg.focus();
+
 });
 
 function sendMessage(message) {
-    const messageElement = document.createElement('div');
-    messageElement.innerText = message;
-    messageContainer.append(messageElement);
+        
+    const div = document.createElement('div');
+    div.classList.add('message');
+    div.innerHTML = `<p class="meta"><span></span></p>
+    <p class="text">${message}</p>`; 
+    document.querySelector('.chat-messages').appendChild(div);
 }

@@ -1,60 +1,66 @@
 const socket = io();
 const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
+const roomName = document.querySelector('#room-name');
+const usersName = document.querySelector('#users');
+const {username, room} = Qs.parse(location.search, {
 
+     ignoreQueryPrefix: true
 
-const name = prompt('What is your name?');
-var username = [];
-socket.emit('new-user',name);
-sendMessage(`<h4 style='color:grey;'>you joined<h4>`);
+});
 
-socket.on('message', data => {
+console.log(username, room);
 
-    sendMessage(`${data.name}: ${data.message}`);
-    
+//joined room chat
+socket.emit('joinRoom',{username, room});
+
+//get room and users
+socket.on('roomUsers', ({room,users}) => {
+
+    getRoom(room);
+    clientGetUsers(users);
+});
+
+//send message
+socket.on('message', message => {
+    console.log(message);
+
+    sendMessage(message);
     chatMessages.scrollTop = chatMessages.scrollHeight;
 });
 
-socket.on('user-connected', data => {
-
-    console.log(`User : ${data.count}`);
-    sendMessage(`${data.name} is comming room chat`);
-   
-});
-
-socket.on('user-disconnected', data => {
-    console.log(`User : ${data.count}`);
-    sendMessage(`${data.name} out room chat`);
-   
-});
- 
+// submit send chat messages
 chatForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const msg = e.target.elements.msg.value;
-    socket.emit('chatMessage',msg);
-    sendMessage(`You : ${msg}`);
-    e.target.elements.msg.value = " ";
-    e.target.elements.msg.focus();
-
+    socket.emit('chatMessage',msg); 
+    e.target.elements.msg.value = ''; 
+    e.target.elements.msg.focus(); 
 });
 
+//function send message
 function sendMessage(message) {
-        
+
     const div = document.createElement('div');
     div.classList.add('message');
-    div.innerHTML = `<p class="meta"><span></span></p>
-    <p class="text">${message}</p>`; 
+    div.innerHTML = `<p class="meta">${message.username} <span>${message.time}</span></p>
+    <p class="text">${message.text}</p>`; 
     document.querySelector('.chat-messages').appendChild(div);
+
 }
 
+//get room name
+function getRoom(room){
 
+    roomName.innerHTML = `${room}`;
+}
 
+// get name users
+function clientGetUsers(users){
 
-
-
-
-
-
+    usersName.innerHTML = `${users.map(user =>
+                `<li>${user.username}</li>`).join(" ")}`; 
+}
 
 
 

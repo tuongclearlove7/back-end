@@ -6,14 +6,15 @@ const handlebars = require('express-handlebars');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
+const formatMessage = require('./services/messages.js');
+const {userJoin, getUsers, usersLeaveRoom, getRoomUsers} = require('./models/users.js');
 
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 
+//config : cấu hìnhs
 app.use(express.static(path.join(__dirname, 'public')));
-
-//config : cấu hình
 app.engine('cl7', handlebars.engine({
     extname : '.cl7',
 }));
@@ -41,43 +42,58 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
-const users = {};
+const users = {
+
+    my : 'You',
+    guest : "Guest"
+};
 var count = 0;
 
+//connection room chat
 io.on('connection',socket => {
 
     console.log('websocket connection...');
 
-    socket.on('new-user', name => {
-        count++;
-        console.log('User : ' + count);
-        users[socket.id] = name;
-        console.log(`${name} joined room chat`);
-        socket.broadcast.emit('user-connected', {
-            name: name,
-            count: count,
+    //joined room chat
+    socket.on('joinRoom', ({username, room}) => {
+
+        const user = userJoin(socket.id,username, room);
+
+        socket.join(user.room);
+        socket.emit('message',formatMessage(users.my,'welcome to webchat'));
+        socket.broadcast.to(user.room).emit('message',
+        
+            formatMessage(users.guest,`${user.username} has joined the webchat`));
+        
+        io.to(user.room).emit('roomUsers', {
+            room : user.room,
+            users: getRoomUsers(user.room)
         });
     });
 
-    socket.on('disconnect', () => {
-        count--;
-        console.log('User : ' + count);
-        socket.broadcast.emit('user-disconnected', {
-            name : users[socket.id],
-            count: count
-        });
-        console.log(`${users[socket.id]} : out room chat`);
-        delete users[socket.id]
+    //chat message
+    socket.on('chatMessage',msg => {
+
+        const user = getUsers(socket.id);
+        io.to(user.room).emit('message', formatMessage(user.username,msg));
+
     });
 
-    socket.on('chatMessage', message => {
-        socket.broadcast.emit('message', { 
-              message: message, 
-              name: users[socket.id],
-          });
-          console.log(`${users[socket.id]} : ${message}`);
-      });
+    //out room chat
+    socket.on('disconnect',() => {
 
+        const user = usersLeaveRoom(socket.id);
+
+        if(user){
+            io.to(user.room).emit('message',
+            formatMessage(users.guest,`${user.username} has left the webchat`));
+
+            io.to(user.room).emit('roomUsers', {
+                room : user.room,
+                users: getRoomUsers(user.room)
+            });
+        }
+    });
 });
 
 server.listen(PORT, () => {
