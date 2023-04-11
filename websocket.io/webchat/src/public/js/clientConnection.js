@@ -25,13 +25,11 @@ appClientConnection.get(0).socketio.on('server', dataToServer => {
     //console.log(data);
 });
 
-// console.log(data);
-
 appClientConnection.get(0).socketio.on('server2', dataToServer => {
 
-    renderData(dataToServer);
+    console.log(dataToServer);
+    renderData(dataToServer.img);
 });
-
 
 function renderData(data){
 
@@ -39,6 +37,32 @@ function renderData(data){
 
     document.querySelector(listNameClass[0]).innerHTML = `${data}`;
 }
+
+document.querySelector(".btn").addEventListener("click", function(e){
+
+    checkValidInput(e);
+});
+
+function checkValidInput(e) {
+
+    e.preventDefault();
+    const username = document.getElementById("username");
+    const room = document.getElementById("room");
+    let valid = true;
+
+    if (!username.value || !room.value) {
+        
+        alert('Vui long nhap vao form input');
+    }else{
+
+        console.log(document.join_page_chat.username.value); // lay du lieu tu form input
+        console.log(document.join_page_chat.room.value);
+        window.location.href=`/chat?username=${document.join_page_chat.username.value}&&room=${document.join_page_chat.room.value}`;
+    }
+
+    return valid;
+}
+
 
 
 

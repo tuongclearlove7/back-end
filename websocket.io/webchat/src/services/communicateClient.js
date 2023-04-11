@@ -11,8 +11,9 @@ function userConnectServer(io){
 
         //get data from server to client
         socket.emit("server",[1,2,3,4]);
-        socket.emit("server2","<p>du lieu tu server2 ket xuat ra client...<p>");
-
+        socket.emit("server2",{
+            img:`<a href="/"><img src="./image/clearlove7.png" alt="banner"></a>`
+        });
     });
 }
 

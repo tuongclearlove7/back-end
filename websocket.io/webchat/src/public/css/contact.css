@@ -1,3 +1,10 @@
+.contact-container{
+
+    margin: 0px 50px auto;
+    max-width: 1200px;
+    padding-top: 50px;
+}
+
 .form-group{
 
     padding: 10px;

@@ -1,30 +1,32 @@
-<div class="logo-header">
-  <h1>Header</h1>
-</div>
+<header>
+  <div class="data-server">
+  </div>
+   <div class="logo-header">
+    <h1><a href="/home">Header</a></h1>
+  </div>
 
-<div class="data-server">
+   <nav id="mobile_menu"></nav>
 
-    
-</div>
+   <nav id="nav_menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/chat">Chat</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/message">Message</a></li>
+            <li><a href="#">About</a>
+                <ul>
+                    <li><a href="https://www.facebook.com/Ytttuong1">facebook <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/tuongclearlove7">github <i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/c13ar17_hacking/">instagram <i class="fa fa-instagram"></i></a></li>
+                    <li><a href="lol00sever@gmail.com">Gmail <i class="fa fa-google"></i></a></li>
+                </ul>
+            </li>
+        </ul>
 
-<div class="nav-menu">
-   <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" href="/"  aria-selected="true">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="chat-tab" href="/chat"  aria-selected="false">Chat</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" href="/news" aria-selected="false">News</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" href="/contact" aria-selected="false">Contact</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" id="profile-tab" href="/message" aria-selected="false">Message</a>
-      </li>
-  </ul>
-</div>
+    </nav>
+
+</header>
+
  
 

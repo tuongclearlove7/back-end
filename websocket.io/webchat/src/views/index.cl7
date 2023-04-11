@@ -3,7 +3,7 @@
 		<h1><i class="fas fa-smile"></i> Webchat</h1>
 	</header>
 	<main class="join-main">
-		<form action="/chat" method="GET">
+		<form name="join_page_chat" action="/chat" method="GET">
 			<div class="form-control">
 				<label for="username">Username</label>
 				<input type="text" name="username" id="username" placeholder="Enter username..." required/>
