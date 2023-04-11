@@ -9,7 +9,7 @@ const {username, room} = Qs.parse(location.search, {
 
 });
 
-console.log(username, room);
+console.log(`${username} at room ${room}`);
 
 //joined room chat
 socket.emit('joinRoom',{username, room});

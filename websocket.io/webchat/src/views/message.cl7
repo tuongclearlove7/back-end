@@ -1,0 +1,29 @@
+<div class="message-container">
+    <form method="post" action="./message">
+        <h2>Hãy gửi tin nhắn cho tôi</h2>
+        <div class="form-group">
+            <input type="text" name="message" class="form-control" id="search-input" placeholder="Nhập tin nhắn">
+            <button type="submit" class="btn btn-primary">SEND</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

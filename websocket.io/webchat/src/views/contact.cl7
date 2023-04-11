@@ -1,3 +1,28 @@
 <div class="contact-container">
-    <h2>Contact</h2>
+    <h2>Tìm kiếm</h2>
+    <form method="post" action="./contact">
+        <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label">Post data</label>
+            <input type="text" name="name" class="form-control" id="search-input" placeholder="nhập từ khóa">
+            <input type="text" name="address" class="form-control" id="search-input" placeholder="nhập từ khóa">
+            <button type="submit" class="btn btn-primary">POST</button>
+        </div>
+    </form>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

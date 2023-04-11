@@ -3,16 +3,19 @@
 <div class="nav-menu">
    <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item">
-        <a class="nav-link active" id="home-tab" href="http://localhost:3000/"  aria-selected="true">Home</a>
+        <a class="nav-link active" id="home-tab" href="/"  aria-selected="true">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="chat-tab" href="http://localhost:3000/chat"  aria-selected="false">Chat</a>
+        <a class="nav-link" id="chat-tab" href="/chat"  aria-selected="false">Chat</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="profile-tab" href="http://localhost:3000/news" aria-selected="false">Profile</a>
+        <a class="nav-link" id="profile-tab" href="/news" aria-selected="false">News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="profile-tab" href="http://localhost:3000/contact" aria-selected="false">Contact</a>
+        <a class="nav-link" id="profile-tab" href="/contact" aria-selected="false">Contact</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" id="profile-tab" href="/message" aria-selected="false">Message</a>
       </li>
   </ul>
 </div>

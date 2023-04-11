@@ -1,0 +1,15 @@
+.form-group{
+
+    padding: 10px;
+}
+
+.form-group button{
+
+    background-color: rgb(65 61 83);
+    color: white;
+}
+
+.form-control{
+
+    margin-bottom: 20px;
+}
