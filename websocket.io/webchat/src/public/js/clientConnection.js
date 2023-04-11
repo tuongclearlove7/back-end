@@ -1,41 +1,44 @@
-const socket = io();
+const appClientConnection = (function () {
+    
+    var data = [{
+        socketio : io()
+    }];
 
-//create promise
-let promise = new Promise(
+    return{
+        get(index){
+            return data[index];
+        }
+    }
+})();
 
-    //Executor
-   function(resolve, reject){
+ //get id user connected
+appClientConnection.get(0).socketio.on('connect',() => {
 
-   resolve("success");//thành công
-
-   reject("Error");// lỗi
+    console.log( appClientConnection.get(0).socketio.id);
 });
 
-promise.then(function(success){
+//receive from server to client
+var memory = [];
+appClientConnection.get(0).socketio.on('server', dataToServer => {
 
-    console.log(success);
+    memory = dataToServer;
+    //console.log(data);
+});
 
-    //get id user connected
-    socket.on('connect',() => {
+// console.log(data);
 
-        console.log(socket.id);
-    });
-    
-    //receive from server to client
-    socket.on('server', msgClient => {
-    
-        console.log(msgClient);
-    });
+appClientConnection.get(0).socketio.on('server2', dataToServer => {
 
-}).catch(function(err){
-
-    console.log(err);
+    renderData(dataToServer);
 });
 
 
+function renderData(data){
 
+    var listNameClass = ['.data-server']
 
-
+    document.querySelector(listNameClass[0]).innerHTML = `${data}`;
+}
 
 
 

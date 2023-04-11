@@ -1,5 +1,5 @@
 const {userJoin, getUsers, usersLeaveRoom, getRoomUsers} = require('../models/users.js');
-const formatMessage = require('./messages.js');
+const formatData = require('./messages.js');
 
 const users = {
 
@@ -10,23 +10,20 @@ var count = 0;
 
 //connection room chat
 function connectWebChat(io){
-
+//connect to page chat
     io.on('connection',socket => {
-    
-        // console.log(socket.id + " websocket connection..."); 
+        
         //joined room chat
         socket.on('joinRoom', ({username, room}) => {
     
+            console.log(`${socket.id} connect to the page chat`);
             const user = userJoin(socket.id,username, room);
-            console.log("has joined the webchat");
-            console.table(user);
-    
             socket.join(user.room);
-            socket.emit('message',formatMessage(user.id, users.my, 'welcome to webchat'));
+            socket.emit('message',formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat"));
             socket.broadcast.to(user.room).emit('message',
-            
-                formatMessage(user.id ,users.guest, `${user.username} has joined the webchat`));
-            
+            //log state data user to server and client
+            formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat"));
+            console.table(formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat"));
             io.to(user.room).emit('roomUsers', {
                 room : user.room,
                 users: getRoomUsers(user.room)
@@ -37,9 +34,9 @@ function connectWebChat(io){
         socket.on('chatMessage',msg => {
     
             const user = getUsers(socket.id);
-            console.log(`chat message`);
-            console.table(formatMessage(user.id, user.username, msg));
-            io.to(user.room).emit('message', formatMessage(user.id, user.username, msg));
+            //log state data user to server and client
+            console.table(formatData(user.id, user.username, msg, user.room, "sending"));
+            io.to(user.room).emit('message', formatData(user.id, user.username, msg, user.room, "sending"));
     
         });
     
@@ -50,9 +47,9 @@ function connectWebChat(io){
     
             if(user){
                 io.to(user.room).emit('message',
-                formatMessage(user.id, users.guest, `${user.username} has left the webchat`));
-                console.log(`has left the webchat`);
-                console.table(user);
+                //log state data user to server and client
+                formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room,'out webchat'));
+                console.table(formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room, 'out webchat'));
                 io.to(user.room).emit('roomUsers', {
                     room : user.room,
                     users: getRoomUsers(user.room)

@@ -1,15 +1,18 @@
+// connection to the website
 function userConnectServer(io){
 
+    //connect to server website
     io.on('connection', (socket) => {
-        
-        console.log(`${socket.id} user connect server...`);
+         console.log(socket.id + " websocket connection website..."); 
         //user disconnect server
         socket.on('disconnect', () => {
-            console.log(`${socket.id} disconnect server`);
+            console.log(`${socket.id} disconnect to server`);
         });
 
-        //server giao tiep voi client
-        socket.emit("server","receive from server to client");
+        //get data from server to client
+        socket.emit("server",[1,2,3,4]);
+        socket.emit("server2","<p>du lieu tu server2 ket xuat ra client...<p>");
+
     });
 }
 

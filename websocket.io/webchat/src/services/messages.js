@@ -1,18 +1,21 @@
 const express = require('express');
 const moment = require('moment');
 
-function formatMessage(id, username, text){
+// format data 
+function formatData(id, username, text, room, state){
    
     return {
         id,
         username,
         text,
+        room,
+        state,
         time : moment().format('h:mm a')
     };
 }
 
 
-module.exports = formatMessage;
+module.exports = formatData;
 
 
 

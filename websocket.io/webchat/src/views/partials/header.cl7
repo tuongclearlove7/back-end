@@ -1,4 +1,11 @@
-<h1>Header</h1>
+<div class="logo-header">
+  <h1>Header</h1>
+</div>
+
+<div class="data-server">
+
+    
+</div>
 
 <div class="nav-menu">
    <ul class="nav nav-tabs" id="myTab" role="tablist">
