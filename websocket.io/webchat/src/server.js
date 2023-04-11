@@ -7,7 +7,7 @@ const io = new Server(server);
 const {configViewEngine} = require('./config/viewEngine.js');
 const {routeWeb} = require('./router/web.js');
 const {connectWebChat} = require('./services/connect_websocket.js');
-const {userConnectServer} = require('./services/getDataClient.js');
+const {userConnectServer} = require('./services/communicateClient.js');
 
 require('dotenv').config();
 
