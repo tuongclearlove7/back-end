@@ -1,6 +1,7 @@
 const express = require('express');
 const homeController = require('../controller/homeController.js');
 const chatController = require('../controller/chatController.js');
+const botFbController = require('../controller/botFbController.js');
 let router = express.Router();
 
 // route : tuyến đường 
@@ -14,6 +15,9 @@ let routeWeb = (app) => {
     router.get("/news",homeController.newsPage);
     router.get("/contact",homeController.contactPage);
     router.post("/contact", homeController.postContactPage);
+    router.get("/botchatfb",botFbController.botPage);
+    router.get("/webhook", botFbController.getWebhook);
+    router.post("/webhook", botFbController.postWebhook);
 
     return app.use("/",router);
 }
