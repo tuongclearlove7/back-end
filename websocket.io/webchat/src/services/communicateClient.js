@@ -1,5 +1,6 @@
+// ket noi voi client gui du lieu tu server toi client
 // connection to the website
-function userConnectServer(io){
+function receiveDataToClient(io){
 
     //connect to server website
     io.on('connection', (socket) => {
@@ -8,8 +9,7 @@ function userConnectServer(io){
         socket.on('disconnect', () => {
             console.log(`${socket.id} disconnect to server`);
         });
-
-        //get data from server to client
+        //data from server to 
         socket.emit("server",[1,2,3,4]);
         socket.emit("server2",{
             img:`<a href="/"><img src="./image/clearlove7.png" alt="banner"></a>`
@@ -20,7 +20,7 @@ function userConnectServer(io){
 
 module.exports = {
 
-    userConnectServer: userConnectServer
+    receiveDataToClient: receiveDataToClient
 };
 
 

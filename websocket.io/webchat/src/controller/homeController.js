@@ -23,6 +23,7 @@ let contactPage = async (req, res, next)=>{
     return res.render('contact.cl7');
 }
 
+//post method contact page
 let postContactPage = async (req, res, next)=>{
 
     console.log("post contact page");

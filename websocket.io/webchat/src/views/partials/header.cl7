@@ -9,11 +9,11 @@
 
    <nav id="nav_menu">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/chat">Chat</a></li>
-            <li><a href="/news">News</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/message">Message</a></li>
+            <li><a id="homepage" href="/">Home</a></li>
+            <li><a id="chatpage" href="/chat">Chat</a></li>
+            <li><a id="newspage" href="/news">News</a></li>
+            <li><a id="contactpage" href="/contact">Contact</a></li>
+            <li><a id="messagepage" href="/message">Message</a></li>
             <li><a href="#">About</a>
                 <ul>
                     <li><a href="https://www.facebook.com/Ytttuong1">facebook <i class="fa fa-facebook"></i></a></li>

@@ -1,10 +1,9 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
 const path = require('path');
-
+//config : cấu hình
 let configViewEngine = (app) =>{
 
-    //config : cấu hìnhs
     app.use(express.static(path.join(__dirname, "../public")));
     app.use(express.urlencoded({extended: true})); 
     app.use(express.json());    
@@ -14,7 +13,6 @@ let configViewEngine = (app) =>{
 }
 
 module.exports = {
-
     configViewEngine : configViewEngine
 };
     
