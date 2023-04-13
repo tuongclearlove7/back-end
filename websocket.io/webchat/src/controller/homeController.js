@@ -19,7 +19,6 @@ let newsPage = async (req, res, next)=>{
 let contactPage = async (req, res, next)=>{
 
     console.log("get contact page");
-    console.log(req.query);
     return res.render('contact.cl7');
 }
 

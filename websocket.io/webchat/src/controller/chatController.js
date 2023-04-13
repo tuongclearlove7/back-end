@@ -13,7 +13,7 @@ let chatPage = async (req, res, next) => {
 let messagePage = async (req, res, next) => {
 
     console.log("get message page");
-    console.log(req.body);
+    // console.log(req.body);
     return res.render('message.cl7');
 }
 

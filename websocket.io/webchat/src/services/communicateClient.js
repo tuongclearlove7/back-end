@@ -16,7 +16,8 @@ function connectToClient(io){
             [
                 {
                     img:`<a href="/"><img src="./image/clearlove7.png" alt="banner"></a>`,
-                    author : "clearlove7",
+                    author : "Clearlove7",
+                    address : "31 Nguyen Khuyen",
                     header: "Header"
                 }
             ] 

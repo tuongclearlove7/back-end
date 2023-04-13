@@ -1,7 +1,7 @@
 <footer>
 
     <div class="footer-top">
-        <h2>Footer</h2>
+       <div class="block-f-top"></div>
     </div>
 
     <div class="footer-bottom">

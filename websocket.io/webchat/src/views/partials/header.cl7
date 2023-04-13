@@ -1,19 +1,26 @@
 <header>
   <div class="logo">
-  </div>
+        <div class="block-logo">
+        
+        </div>
+    </div>
    <div class="heading">
+        <div class="block-heading">
+        
+        </div>
   </div>
 
    <nav id="mobile_menu"></nav>
 
    <nav id="nav_menu">
         <ul>
-            <li><a id="homepage" href="/">Home</a></li>
-            <li><a id="chatpage" href="/chat">Chat</a></li>
-            <li><a id="newspage" href="/news">News</a></li>
-            <li><a id="contactpage" href="/contact">Contact</a></li>
-            <li><a id="messagepage" href="/message">Message</a></li>
-            <li><a href="#">About</a>
+            <div class="block-nav">
+                <li><a id="homepage" href="/">Home</a></li>
+                <li><a id="chatpage" href="/chat">Chat</a></li>
+                <li><a id="newspage" href="/news">News</a></li>
+                <li><a id="contactpage" href="/contact">Contact</a></li>
+                <li><a id="messagepage" href="/message">Message</a></li>
+                <li><a href="#">About</a>
                 <ul>
                     <li><a href="https://www.facebook.com/Ytttuong1">facebook <i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://github.com/tuongclearlove7">github <i class="fa fa-github"></i></a></li>
@@ -21,6 +28,8 @@
                     <li><a href="lol00sever@gmail.com">Gmail <i class="fa fa-google"></i></a></li>
                 </ul>
             </li>
+            </div>
+           
         </ul>
 
     </nav>

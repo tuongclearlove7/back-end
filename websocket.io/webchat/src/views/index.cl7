@@ -19,7 +19,9 @@
 					<option value="Java">Java</option>
 				</select>
 			</div>
-			<button type="submit" class="btn">Join Chat</button>
+			<div class="join-btn">
+				<button type="submit" class="btn">Join Chat</button>
+			</div>
 		</form>
 	</main>
 </div>
