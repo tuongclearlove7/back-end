@@ -1,5 +1,5 @@
-
-// event nav link kiem tra co nhap input hay k truoc khi vao room chat 
+// event nav link 
+//su kien click vao nav link 
 document.querySelector("#chatpage").addEventListener("click", function(e){
     var user = undefined;
     var roomname = undefined;

@@ -13,7 +13,7 @@ let configViewEngine = (app) =>{
 }
 
 module.exports = {
-    configViewEngine : configViewEngine
+    decorateWebsite : configViewEngine
 };
     
   

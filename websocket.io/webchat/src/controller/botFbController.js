@@ -7,22 +7,6 @@ let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
 let botPage = async (req,res, next)=>{
 
-   /*try{
-
-     let data = await db.User.findAll();
-
-     console.log(data);
-
-     return res.render('index.ejs',{
-
-            data : JSON.stringify(data),
-         });
-    
-     }
-     catch(e){
-
-        console.log(e);
-      }*/
 
       res.setHeader('Access-Control-Allow-Origin', process.env.REACT);
       res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -33,7 +17,7 @@ let botPage = async (req,res, next)=>{
   
       console.log("reload app");
 
-      return res.send('hello world!');
+      return res.send('bot page');
 }
 
 let postWebhook = (req,res) =>{

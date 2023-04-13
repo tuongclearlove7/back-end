@@ -1,8 +1,7 @@
 <header>
-  <div class="data-server">
+  <div class="logo">
   </div>
-   <div class="logo-header">
-    <h1><a href="/home">Header</a></h1>
+   <div class="heading">
   </div>
 
    <nav id="mobile_menu"></nav>

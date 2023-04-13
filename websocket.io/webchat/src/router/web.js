@@ -10,13 +10,13 @@ let routeWeb = (app) => {
     router.get("/",homeController.homePage);
     router.get("/home",homeController.homePage);
     router.get("/chat",chatController.chatPage);
-    router.post("/message",chatController.messagePage);
     router.get("/message",chatController.messagePage);
     router.get("/news",homeController.newsPage);
     router.get("/contact",homeController.contactPage);
-    router.post("/contact", homeController.postContactPage);
     router.get("/botchatfb",botFbController.botPage);
     router.get("/webhook", botFbController.getWebhook);
+    router.post("/contact", homeController.postContactPage);
+    router.post("/message",chatController.messagePage);
     router.post("/webhook", botFbController.postWebhook);
 
     return app.use("/",router);

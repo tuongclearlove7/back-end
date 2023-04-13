@@ -10,9 +10,8 @@ var count = 0;
 
 //connection room chat
 function connectWebChat(io){
-//connect to page chat
-    io.on('connection',socket => {
-        
+
+    io.on('connection',socket => {        
         //joined room chat
         socket.on('joinRoom', ({username, room}) => {
     
@@ -44,7 +43,6 @@ function connectWebChat(io){
         socket.on('disconnect',() => {
     
             const user = usersLeaveRoom(socket.id);
-    
             if(user){
                 io.to(user.room).emit('message',
                 //log state data user to server and client
@@ -58,7 +56,6 @@ function connectWebChat(io){
         });
     });
 }
-
 
 module.exports = {
 

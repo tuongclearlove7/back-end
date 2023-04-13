@@ -1,45 +1,43 @@
-
-//ket noi voi server de lay du lieu tu server
-const appClientConnection = (function () {
+//connection server
+//ket noi voi server 
+const appSocket = (function () {
     
     var data = [{
-        socketio : io()
+        socketio : io(),
     }];
 
     return{
         get(index){
             return data[index];
-        }
+        },
+        add(obj){
+            return data.push(obj);
+        }, 
     }
 })();
 
- //get id user connected
-appClientConnection.get(0).socketio.on('connect',() => {
-    //get id
-    console.log(appClientConnection.get(0).socketio.id);
+//receive from server to client 
+// nhan du lieu tu server
+appSocket.get(0).socketio.on('connect',resource => {
+
+    resource = appSocket.get(0).socketio.id;
+    console.log(resource);
 });
 
-//receive from server to client
-var memory = [];
-appClientConnection.get(0).socketio.on('server', dataToServer => {
+appSocket.get(0).socketio.on('encoding', key => {
 
-    memory = dataToServer;
-    //console.log(data);
+    appSocket.get(0).socketio.on(key, (...resource) => {
+
+        console.log(resource);
+        renderData(".logo",null,resource[1][0].img);//render
+        renderData(".heading",null,`<h1><a href="/home">${resource[1][0].header}</a></h1>`);
+    });    
 });
-
-appClientConnection.get(0).socketio.on('server2', dataToServer => {
-    //get data from server
-    console.log(dataToServer);
-    renderData(dataToServer.img);
-});
-
 
 //render data from server
-function renderData(data){
+function renderData(classname, id, obj){
 
-    var listNameClass = ['.data-server']
-
-    document.querySelector(listNameClass[0]).innerHTML = `${data}`;
+    document.querySelector(classname).innerHTML = `${obj}`;
 }
 
 
