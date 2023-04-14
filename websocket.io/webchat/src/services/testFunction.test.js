@@ -13,7 +13,7 @@ describe('the can', () => {
 
     const io = new Server(server);
 
-    test('connection websocket success', () => {
+    test('connect success websocket', () => {
         expect(testcase1.connectWebChat(io)).not.toBe(io);
     });
     test('the argument is true', () => {
