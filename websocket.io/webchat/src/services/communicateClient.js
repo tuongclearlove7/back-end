@@ -10,7 +10,7 @@ function connectToClient(io){
             console.log(`${socket.id} disconnect to server`);
         });
         //gui du lieu den client
-        socket.emit('encoding', encoding.convertStringToHex);
+        socket.emit('encoding', encoding.convertStringToHex1);
         socket.emit(encoding.convertStringToHex1,
             [1,2,3,4],
             [
