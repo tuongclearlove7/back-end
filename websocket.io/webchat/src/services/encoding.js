@@ -8,13 +8,10 @@ function convertStringToHex(str) {
 
 var string = ['server'];
 
-for(var i = 0; i < string.length; i++) {
-    module.exports = {
-        convertStringToHex : convertStringToHex(string[i]),
-    }
+module.exports = {
+    convertStringToHex1 : convertStringToHex(string[0]),
+    convertStringToHex
 }
-
-
 
 
 

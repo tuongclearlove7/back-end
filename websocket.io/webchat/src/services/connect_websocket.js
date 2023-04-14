@@ -1,5 +1,5 @@
 const {userJoin, getUsers, usersLeaveRoom, getRoomUsers} = require('../models/users.js');
-const formatData = require('./messages.js');
+const {formatData} = require('./messages.js');
 //connection websocket
 const users = {
 

@@ -14,8 +14,7 @@ function formatData(id, username, text, room, state){
     };
 }
 
-
-module.exports = formatData;
+module.exports = {formatData};
 
 
 

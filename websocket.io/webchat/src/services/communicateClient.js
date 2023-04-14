@@ -11,7 +11,7 @@ function connectToClient(io){
         });
         //gui du lieu den client
         socket.emit('encoding', encoding.convertStringToHex);
-        socket.emit(encoding.convertStringToHex,
+        socket.emit(encoding.convertStringToHex1,
             [1,2,3,4],
             [
                 {
