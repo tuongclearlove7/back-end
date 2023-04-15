@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">24.13% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/24</span>
+                <span class='fraction'>7/29</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">24.13% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/24</span>
+                <span class='fraction'>7/29</span>
             </div>
         
             
@@ -128,7 +128,10 @@
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -137,32 +140,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -170,8 +162,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -201,23 +207,24 @@ const users = {
     my : 'You',
     guest : "Guest"
 };
-var count = 0;
-&nbsp;
+var countUsers = 0;
+var countMessages = 0;
 //connection room chat
 function connectWebChat(io){
 &nbsp;
     io.on('connection',<span class="fstat-no" title="function not covered" >so</span>cket =&gt; {        
         //joined room chat
 <span class="cstat-no" title="statement not covered" >        socket.on('joinRoom', <span class="fstat-no" title="function not covered" >({</span>username, room}) =&gt; {</span>
-    
+<span class="cstat-no" title="statement not covered" >            ++countUsers;/</span>/ count users joined room
+<span class="cstat-no" title="statement not covered" >            console.log(countUsers);</span>
 <span class="cstat-no" title="statement not covered" >            console.log(`${socket.id} connect to the page chat`);</span>
             const user = <span class="cstat-no" title="statement not covered" >userJoin(socket.id,username, room);</span>
 <span class="cstat-no" title="statement not covered" >            socket.join(user.room);</span>
-<span class="cstat-no" title="statement not covered" >            socket.emit('message',formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat"));</span>
+<span class="cstat-no" title="statement not covered" >            socket.emit('message',formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages));</span>
 <span class="cstat-no" title="statement not covered" >            socket.broadcast.to(user.room).emit('message',</span>
-            //log state data user to server and client
-            formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat"));
-<span class="cstat-no" title="statement not covered" >            console.table(formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat"));</span>
+            //log state data users from server
+            formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages));
+<span class="cstat-no" title="statement not covered" >            console.table(formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages));</span>
 <span class="cstat-no" title="statement not covered" >            io.to(user.room).emit('roomUsers', {</span>
                 room : user.room,
                 users: getRoomUsers(user.room)
@@ -228,9 +235,10 @@ function connectWebChat(io){
 <span class="cstat-no" title="statement not covered" >        socket.on('chatMessage',<span class="fstat-no" title="function not covered" >ms</span>g =&gt; {</span>
     
             const user = <span class="cstat-no" title="statement not covered" >getUsers(socket.id);</span>
-            //log state data user to server and client
-<span class="cstat-no" title="statement not covered" >            console.table(formatData(user.id, user.username, msg, user.room, "sending"));</span>
-<span class="cstat-no" title="statement not covered" >            io.to(user.room).emit('message', formatData(user.id, user.username, msg, user.room, "sending"));</span>
+<span class="cstat-no" title="statement not covered" >            ++countMessages;/</span>/count messages
+             //log state data users from server
+<span class="cstat-no" title="statement not covered" >            console.table(formatData(user.id, user.username, msg, user.room, "sending", countUsers, countMessages));</span>
+<span class="cstat-no" title="statement not covered" >            io.to(user.room).emit('message', formatData(user.id, user.username, msg, user.room, "sending", countUsers, countMessages));</span>
     
         });
     
@@ -239,10 +247,11 @@ function connectWebChat(io){
     
             const user = <span class="cstat-no" title="statement not covered" >usersLeaveRoom(socket.id);</span>
 <span class="cstat-no" title="statement not covered" >            if(user){</span>
+<span class="cstat-no" title="statement not covered" >                --countUsers;/</span>/count user disconnect room chat
 <span class="cstat-no" title="statement not covered" >                io.to(user.room).emit('message',</span>
-                //log state data user to server and client
-                formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room,'out webchat'));
-<span class="cstat-no" title="statement not covered" >                console.table(formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room, 'out webchat'));</span>
+                 //log state data users from server
+                formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room,'out webchat', countUsers, countMessages));
+<span class="cstat-no" title="statement not covered" >                console.table(formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room, 'out webchat', countUsers, countMessages));</span>
 <span class="cstat-no" title="statement not covered" >                io.to(user.room).emit('roomUsers', {</span>
                     room : user.room,
                     users: getRoomUsers(user.room)
@@ -265,7 +274,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-04-14T06:39:05.651Z
+                at 2023-04-15T13:49:25.762Z
             </div>
         <script src="../prettify.js"></script>
         <script>

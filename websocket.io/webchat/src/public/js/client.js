@@ -1,3 +1,4 @@
+import { render_object } from "./clientRendering.js";
 const socket = io();
 const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
@@ -15,16 +16,18 @@ console.log(`${username} at room ${room}`);
 socket.emit('joinRoom',{username, room});
 
 //get room and users
-socket.on('roomUsers', ({room,users}) => {
+socket.on('roomUsers', function user({room,users}){
 
     getRoom(room);
     clientGetUsers(users);
+    
 });
 
 //send message
 socket.on('message', message => {
+    
     console.log(message);
-
+    render_object('.count-users',`${message.countUsers}`);
     sendMessage(message);
     chatMessages.scrollTop = chatMessages.scrollHeight;
 });
@@ -61,7 +64,6 @@ function clientGetUsers(users){
     usersName.innerHTML = `${users.map(user =>
                 `<li>${user.username}</li>`).join(" ")}`; 
 }
-
 
 
 

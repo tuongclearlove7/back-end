@@ -18,12 +18,14 @@ describe('the can', () => {
     });
     test('the argument is true', () => {
         io.on('connection',socket => { 
-            expect(formatData(null,null,null,null,null)).toStrictEqual({
+            expect(formatData(null,null,null,null,null,null)).toStrictEqual({
                 id : socket.id, 
                 room: null, 
                 state: null,
                 text: null, 
                 username: null,
+                ucontUsers,
+                countMessages,                
                 time : moment().format('h:mm a')
             });
         });

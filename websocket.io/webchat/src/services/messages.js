@@ -2,7 +2,7 @@ const express = require('express');
 const moment = require('moment');
 
 // format data 
-function formatData(id, username, text, room, state){
+function formatData(id, username, text, room, state, countUsers, countMessages){
    
     return {
         id,
@@ -10,6 +10,8 @@ function formatData(id, username, text, room, state){
         text,
         room,
         state,
+        countUsers,   
+        countMessages,
         time : moment().format('h:mm a')
     };
 }

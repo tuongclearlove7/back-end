@@ -34,7 +34,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.1/qs.min.js" integrity="sha512-5Zv/hNtOKSkeScnIYOqGjng82gQSHsCoyqq9TgrJLgYa032cUYWH4kF1ayS8Gz1Jfge7e8MaBF6AeEvoQ92v8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha512-f0AM6x08kthGzMyDHZjBgjBCPp8V8ovlHYCI1jMkhViTeX3MykGCf/DnN1khWss/6d1105eAG4TniSKy6UhZrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="js/validationJoinChat.js"></script>
-    <script src="./js/communicateServer.js"></script>
+    <script type="module" src="./js/communicateServer.js"></script>
 
      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="js/jquery.slicknav.min.js"></script>

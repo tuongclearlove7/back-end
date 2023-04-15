@@ -15,9 +15,10 @@
 .logo{
 
 	float: left;
-	width: 75%;
+	width: 12%;
 	height: 80px;
 	background-color: #383838;
+	
 }
 
 .logo .block-logo img{
@@ -28,16 +29,22 @@
     border-radius: 100%;
 }
 
+.block-logo{
+
+	z-index: 10;
+}
+
 .heading{
 
 	height: 80px;
 	float: left;
-	width: 25%;
+	width: 88%;
 	background-color: #25272c;
 }
 
 .heading .block-heading h1{
 
+	text-align: center;
 	padding: 20px 70px;
 }
 
@@ -200,7 +207,32 @@ footer{
 
         display: none;
     }
+	.chat-header h1 {
+		color: #fff;
+		font-size: 20px;
+	}
     
+	.chat-header a {
+		background-color: #2d2f37;
+		border: 2px solid white;
+		color: white;
+		font-size: 10px;
+	}
+
+	.message h2{
+
+		font-size: 15px;
+	}
+
+	.chat-form-container form {
+		width: 250px;
+    	margin: 0 auto;
+	}
+
+	.chat-form-container input[type='text'] {
+
+		width: 100%;
+	}
     
 }
 
