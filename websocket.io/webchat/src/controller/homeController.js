@@ -1,8 +1,10 @@
 const express = require('express');
 require("dotenv").config();
-
+//controller render pages 
+// bộ điều khiển kết xuất trang
 class homeController {
-
+    //render home page ...
+    // kết xuất trang home và các trang khác ...
     index = async (req,res, next)=>{
 
         console.log("get home page");
@@ -32,7 +34,7 @@ class homeController {
     }
     show = async (req,res, next)=>{
        
-        return res.render('index');
+        return res.render('index.cl7');
     }
 }
 

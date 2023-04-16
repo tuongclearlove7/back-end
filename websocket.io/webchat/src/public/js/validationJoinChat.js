@@ -1,4 +1,4 @@
-// event nav link 
+// event click nav link 
 //su kien click vao nav link 
 document.querySelector("#chatpage").addEventListener("click", function(e){
     var user = undefined;

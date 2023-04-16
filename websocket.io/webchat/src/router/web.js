@@ -4,7 +4,8 @@ const chatRoute = require('./chat');
 const homeRoute = require('./home');
 const {botPage, getWebhook, postWebhook} = require('../controller/botFbController');
 
-// route : tuyến đường 
+//route init 
+//hàm khởi tạo tuyến đường
 let routeWebInit = (app) => {
 
     app.get('/chatbotfb', botPage.index);

@@ -16,10 +16,11 @@ const port = process.env.PORT || 3000;
 
 viewEngine.decorateWebsite(app,path);//config : cấu hình 
 router.routeWebInit(app);//router : tuyến đường
-communicateClient.connectToClient(io);//ket noi voi client
-connectPageChat.connectWebChat(io);// ket noi voi page chat
+communicateClient.connectToClient(io);//connect to client (ket noi voi client)
+connectPageChat.connectWebChat(io);//connect to page chat (ket noi voi phong chat)
 
 //chạy port
+//run port
 server.listen(port, () => {
     console.log(`server running on port ${port}`);
 });

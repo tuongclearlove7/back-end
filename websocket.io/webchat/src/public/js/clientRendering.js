@@ -6,13 +6,11 @@ function render_List(class1, class2, obj){
     div.innerHTML = `${obj}`; 
     document.querySelector(class1).appendChild(div);
 }
-
 //hàm render list 1 object
 function render_object(classOrID,countUsers){
 
     document.querySelector(classOrID).innerText = countUsers;
 }
-
 //function send message
 function sendMessage(message) {
 
@@ -23,10 +21,7 @@ function sendMessage(message) {
     document.querySelector('.chat-messages').appendChild(div);
 
 }
-
-
 export{
-
     render_object,
     render_List,
     sendMessage

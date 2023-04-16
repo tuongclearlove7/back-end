@@ -8,11 +8,11 @@ const {formatData} = require('./messages.js');
 const moment = require('moment');
 const testcase2 = require('./encoding.js');
 const {convertStringToHex} = require('./encoding.js');
-
+//test function
 describe('the can', () => {
 
     const io = new Server(server);
-
+    //tests case
     test('connect success websocket', () => {
         expect(testcase1.connectWebChat(io)).not.toBe(io);
     });

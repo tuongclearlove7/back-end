@@ -2,7 +2,8 @@ const encoding = require('./encoding.js');
 // connection to the website
 function connectToClient(io){
 
-    //connect web server 
+    //connect web server
+    // ket noi vao web server
     io.on('connection', (socket) => {
          console.log(socket.id + " websocket connection website..."); 
         //user disconnect server
@@ -10,6 +11,7 @@ function connectToClient(io){
             console.log(`${socket.id} disconnect to server`);
         });
         //gui du lieu den client
+        //send object to client
         socket.emit('encoding', encoding.convertStringToHex1);
         socket.emit(encoding.convertStringToHex1,
             [1,2,3,4],

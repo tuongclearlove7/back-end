@@ -2,6 +2,7 @@ const express = require('express');
 const {homePage} = require('../controller/homeController');
 let router = express.Router();
 
+//route path home page : tuyến đường trang home và các trang khác cùng tuyến đường với home
 router.get('/news', homePage.news);
 router.get('/news', homePage.news);
 router.get('/contact', homePage.contact);

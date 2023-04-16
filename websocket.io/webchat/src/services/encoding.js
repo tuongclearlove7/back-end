@@ -1,3 +1,5 @@
+//ham ma hoa chuoi
+// encode string
 function convertStringToHex(str) {
     var arr = [];
     for (var i = 0; i < str.length; i++) {//string to hex code

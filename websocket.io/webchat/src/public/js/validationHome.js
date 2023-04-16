@@ -1,4 +1,4 @@
-//event button tai trang home 
+//event click button at home page
 //su kien click vao button join chat
 document.querySelector(".btn").addEventListener("click", function(e){
     //function click button
