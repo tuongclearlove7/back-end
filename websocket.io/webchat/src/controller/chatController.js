@@ -6,6 +6,7 @@ class chatController {
     index = async (req,res, next)=>{
 
         console.log("get chat page");
+
         return res.render('chat');
     }
     
