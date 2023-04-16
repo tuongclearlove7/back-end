@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681566565779" clover="3.2.0">
-  <project timestamp="1681566565779" name="All files">
-    <metrics statements="49" coveredstatements="18" conditionals="4" coveredconditionals="0" methods="14" coveredmethods="2" elements="67" coveredelements="20" complexity="0" loc="49" ncloc="49" packages="2" files="4" classes="4"/>
+<coverage generated="1681639670783" clover="3.2.0">
+  <project timestamp="1681639670784" name="All files">
+    <metrics statements="50" coveredstatements="18" conditionals="4" coveredconditionals="0" methods="14" coveredmethods="2" elements="68" coveredelements="20" complexity="0" loc="50" ncloc="50" packages="2" files="4" classes="4"/>
     <package name="models">
       <metrics statements="10" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="users.js" path="C:\Users\clearlove7\Documents\GitHub\Back-End\websocket.io\webchat\src\models\users.js">
@@ -19,9 +19,9 @@
       </file>
     </package>
     <package name="services">
-      <metrics statements="39" coveredstatements="16" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="2"/>
+      <metrics statements="40" coveredstatements="16" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="2"/>
       <file name="connect_websocket.js" path="C:\Users\clearlove7\Documents\GitHub\Back-End\websocket.io\webchat\src\services\connect_websocket.js">
-        <metrics statements="29" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="1"/>
+        <metrics statements="30" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -48,9 +48,10 @@
         <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="49" count="0" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
         <line num="54" count="0" type="stmt"/>
-        <line num="63" count="1" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
       </file>
       <file name="encoding.js" path="C:\Users\clearlove7\Documents\GitHub\Back-End\websocket.io\webchat\src\services\encoding.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
