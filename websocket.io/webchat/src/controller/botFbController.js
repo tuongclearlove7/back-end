@@ -4,21 +4,23 @@ const fs = require("fs");
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
+class botFbController {
 
-let botPage = async (req,res, next)=>{
+    index = async (req,res, next)=>{
 
+        // res.setHeader('Access-Control-Allow-Origin', process.env.REACT);
+        // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+        // res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+        // res.setHeader('Access-Control-Allow-Credentials', true);
 
-      res.setHeader('Access-Control-Allow-Origin', process.env.REACT);
-      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-      res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-      res.setHeader('Access-Control-Allow-Credentials', true);
-  
-      next();
-  
-      console.log("reload app");
+        // next();
 
-      return res.send('bot page');
+        console.log("reload app");
+
+        return res.send('bot page');
+    }
 }
+
 
 let postWebhook = (req,res) =>{
 
@@ -120,7 +122,7 @@ function callSendAPI(sender_psid, response) {
 }
 
 module.exports = {
-    botPage: botPage,
+    botPage : new botFbController,
     getWebhook: getWebhook,
     postWebhook: postWebhook,
     callSendAPI : callSendAPI

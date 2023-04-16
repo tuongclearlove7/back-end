@@ -1,24 +1,20 @@
 const express = require('express');
 require("dotenv").config();
 
+class chatController {
 
-//render chat page
-let chatPage = async (req, res, next) => {
+    index = async (req,res, next)=>{
 
-    console.log("get chat page");
-    return res.render('chat.cl7');
-}
-
-//render message page
-let messagePage = async (req, res, next) => {
-
-    console.log("get message page");
-    // console.log(req.body);
-    return res.render('message.cl7');
+        console.log("get chat page");
+        return res.render('chat');
+    }
+    
+    show = async (req,res, next)=>{
+       
+        return res.send('chat detail');
+    }
 }
 
 module.exports = {
-
-    chatPage: chatPage,
-    messagePage : messagePage
-};
+    chatPage : new chatController,
+}

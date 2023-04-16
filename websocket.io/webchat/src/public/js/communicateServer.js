@@ -32,7 +32,7 @@ appSocket.get(0).socketio.on('encoding', key => {
         console.log(resource);
         //render to display
         render_List(".logo","block-logo",resource[1][0].img);
-         render_List(".heading","block-heading",`<h1><a href="/home">${resource[1][0].header}</a></h1>`);
+        render_List(".heading","block-heading",`<h1><a href="/home">${resource[1][0].header}</a></h1>`);
         render_List(".footer-top","block-f-top",`<address>${resource[1][0].author}</address>`);
         render_List(".footer-top","block-f-top",`<address>${resource[1][0].address}</address>`);
 

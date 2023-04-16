@@ -13,11 +13,23 @@ function render_object(classOrID,countUsers){
     document.querySelector(classOrID).innerText = countUsers;
 }
 
+//function send message
+function sendMessage(message) {
+
+    const div = document.createElement('div');
+    div.classList.add('message');
+    div.innerHTML = `<p class="meta">${message.username} <span>${message.time}</span></p>
+    <p class="text">${message.text}</p>`; 
+    document.querySelector('.chat-messages').appendChild(div);
+
+}
+
 
 export{
 
     render_object,
     render_List,
+    sendMessage
 }
 
 

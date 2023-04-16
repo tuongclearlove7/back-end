@@ -1,8 +1,7 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
-const path = require('path');
 //config : cấu hình
-let configViewEngine = (app) =>{
+let configViewEngine = (app,path) =>{
 
     app.use(express.static(path.join(__dirname, "../public")));
     app.use(express.urlencoded({extended: true})); 

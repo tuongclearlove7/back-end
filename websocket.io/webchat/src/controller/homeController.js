@@ -1,42 +1,41 @@
 const express = require('express');
 require("dotenv").config();
 
+class homeController {
 
-//render home page
-let homePage = async (req,res, next)=>{
+    index = async (req,res, next)=>{
 
-    console.log("get home page");
-    return res.render('index.cl7');
+        console.log("get home page");
+        return res.render('index.cl7');
+    }
+    news = async (req,res, next)=>{
+       
+        return res.render('news.cl7');
+    }
+    contact = async (req,res, next)=>{
+       
+        return res.render('contact.cl7');
+    }
+    postcontact = async (req,res, next)=>{
+       
+        console.log(req.body);
+        return res.render('contact.cl7');
+    }
+    message = async (req,res, next)=>{
+       
+        return res.render('message.cl7');
+    }
+    postmessage = async (req,res, next)=>{
+       
+        console.log(req.body);
+        return res.render('message.cl7');
+    }
+    show = async (req,res, next)=>{
+       
+        return res.render('index');
+    }
 }
-
-//render news page
-let newsPage = async (req, res, next)=>{
-
-    console.log("get news page");
-    return res.render('news.cl7');
-}
-//render contact page
-let contactPage = async (req, res, next)=>{
-
-    console.log("get contact page");
-    return res.render('contact.cl7');
-}
-
-//post method contact page
-let postContactPage = async (req, res, next)=>{
-
-    console.log("post contact page");
-    console.log(`nguoi dung vua nhap`);
-    console.log(req.body);
-    return res.render('contact.cl7');
-}
-
 
 module.exports = {
-
-    homePage : homePage,
-    newsPage : newsPage,
-    contactPage : contactPage,
-    postContactPage: postContactPage
-    
+    homePage : new homeController,
 }

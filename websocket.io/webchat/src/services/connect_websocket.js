@@ -21,7 +21,7 @@ function connectWebChat(io){
             socket.join(user.room);
             socket.emit('message',formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages));
             socket.broadcast.to(user.room).emit('message',
-            //log state data users from server
+            //log state data users 
             formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages));
             console.table(formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages));
             io.to(user.room).emit('roomUsers', {
@@ -35,7 +35,7 @@ function connectWebChat(io){
     
             const user = getUsers(socket.id);
             ++countMessages;//count messages
-             //log state data users from server
+             //log state data users 
             console.table(formatData(user.id, user.username, msg, user.room, "sending", countUsers, countMessages));
             io.to(user.room).emit('message', formatData(user.id, user.username, msg, user.room, "sending", countUsers, countMessages));
     
@@ -47,8 +47,9 @@ function connectWebChat(io){
             const user = usersLeaveRoom(socket.id);
             if(user){
                 --countUsers;//count user disconnect room chat
+                countMessages = 0;
                 io.to(user.room).emit('message',
-                 //log state data users from server
+                 //log state data users 
                 formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room,'out webchat', countUsers, countMessages));
                 console.table(formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room, 'out webchat', countUsers, countMessages));
                 io.to(user.room).emit('roomUsers', {

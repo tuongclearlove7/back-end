@@ -1,6 +1,6 @@
 <div class="chat-container">
   <header class="chat-header">
-    <h1><i class="fas fa-smile"></i> Webchat</h1>
+    <h1><i class="fas fa-comments"></i> Webchat</h1>
     <a href="/" class="btn">Leave Room</a>
   </header>
   <main class="chat-main">
@@ -13,6 +13,7 @@
     <div class="chat-messages">
         <div class="message">
           <h2>Welcome to webchat</h2>
+          <p>Boss clearlove7</p>
         </div>
     </div>
   </main>

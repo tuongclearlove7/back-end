@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
@@ -13,14 +14,13 @@ require('dotenv').config();
 //port : cổng
 const port = process.env.PORT || 3000;
 
-viewEngine.decorateWebsite(app);//config : cấu hình 
-router.routeWeb(app);//router : tuyến đường
+viewEngine.decorateWebsite(app,path);//config : cấu hình 
+router.routeWebInit(app);//router : tuyến đường
 communicateClient.connectToClient(io);//ket noi voi client
 connectPageChat.connectWebChat(io);// ket noi voi page chat
 
 //chạy port
 server.listen(port, () => {
-
     console.log(`server running on port ${port}`);
 });
 

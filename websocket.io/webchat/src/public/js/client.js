@@ -1,4 +1,4 @@
-import { render_object } from "./clientRendering.js";
+import { render_object , sendMessage} from "./clientRendering.js";
 const socket = io();
 const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
@@ -40,17 +40,6 @@ chatForm.addEventListener('submit', (e) => {
     e.target.elements.msg.value = ''; 
     e.target.elements.msg.focus(); 
 });
-
-//function send message
-function sendMessage(message) {
-
-    const div = document.createElement('div');
-    div.classList.add('message');
-    div.innerHTML = `<p class="meta">${message.username} <span>${message.time}</span></p>
-    <p class="text">${message.text}</p>`; 
-    document.querySelector('.chat-messages').appendChild(div);
-
-}
 
 //get room name
 function getRoom(room){
