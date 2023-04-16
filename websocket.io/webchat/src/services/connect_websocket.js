@@ -23,11 +23,6 @@ function connectWebChat(io){
             console.log(`${socket.id} connect to the page chat`);
             const user = userJoin(socket.id,username, room);
             socket.join(user.room);
-            socket.emit('message',formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages));
-            socket.broadcast.to(user.room).emit('message',
-            //print out the data status.
-            //in trạng thái dữ liệu.
-            formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages));
             //object của một user mới tham gia vào room chat
             //the object of a new user joining the chat room.
             const obj_user = formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages);
@@ -38,6 +33,10 @@ function connectWebChat(io){
             if(obj_user.countUsers > 1){
                 obj_user.countMessages = 0;// reset về 0
             }
+            socket.emit('message', obj_user);
+            socket.broadcast.to(user.room).emit('message', obj_user);
+            //print out the data status.
+            //in trạng thái dữ liệu.
             console.table(formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, obj_user.countMessages));
             io.to(user.room).emit('roomUsers', {
                 room : user.room,
@@ -51,11 +50,11 @@ function connectWebChat(io){
             //count the number of messages.
             //đếm số lượng tin nhắn.
             ++countMessages;
-            const obj_user = formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "sending", countUsers, countMessages);
+            const obj_user = formatData(user.id, user.username, msg, user.room, "sending", countUsers, countMessages);
             //print out the data status.
-            //in trạng thái dữ liệu.
+            //in trạng thái dữ liệu
             console.table(obj_user);
-            io.to(user.room).emit('message', formatData(user.id, user.username, msg, user.room, "sending", countUsers, countMessages));
+            io.to(user.room).emit('message', obj_user);
     
         });
     
