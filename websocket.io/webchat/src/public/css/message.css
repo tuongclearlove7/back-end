@@ -5,6 +5,12 @@
     padding-bottom: 200px;
 }
 
+.message-container h2{
+
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
 .message-container .form-group{
 
     padding: 0;

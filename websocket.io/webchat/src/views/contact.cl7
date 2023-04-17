@@ -1,6 +1,9 @@
 <div class="contact-container">
     <main>
-      <h2>Tìm kiếm</h2>
+       <h2>{{#each databases}}
+            {{this.contact}}
+            {{/each}}
+        </h2>
         <form method="post" action="./contact">
           <div class="form-group">
             <label for="exampleInputPassword1" class="form-label">Post data</label>

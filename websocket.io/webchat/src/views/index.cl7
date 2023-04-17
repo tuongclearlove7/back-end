@@ -1,3 +1,7 @@
+<h1>{{#each databases}}
+	{{this.home}}
+	{{/each}}
+</h1>
 <div class="join-container">
 	<header class="join-header">
 		<h1><i class="fas fa-comments"></i> Webchat</h1>

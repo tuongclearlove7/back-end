@@ -9,7 +9,7 @@ const viewEngine = require('./config/viewEngine.js');
 const router = require('./router/web.js');
 const connectPageChat = require('./services/connect_websocket.js');
 const communicateClient = require('./services/communicateClient.js');
-
+const db = require('./config/databases/index.js');
 require('dotenv').config();
 //port : cổng
 const port = process.env.PORT || 3000;
@@ -18,6 +18,7 @@ viewEngine.decorateWebsite(app,path);//config : cấu hình
 router.routeWebInit(app);//router : tuyến đường
 communicateClient.connectToClient(io);//connect to client (ket noi voi client)
 connectPageChat.connectWebChat(io);//connect to page chat (ket noi voi phong chat)
+db.connectDB();//connect databases : kết nối databases
 
 //chạy port
 //run port
