@@ -1,11 +1,19 @@
 <footer>
 
     <div class="footer-top">
-       <div class="block-f-top"></div>
+       <address>
+            {{#each data}}
+            {{this.name_dev}}
+            {{/each}}
+        </address>
+       <address>
+            {{#each data}}
+            {{this.adDress}}
+            {{/each}}
+       </address>
     </div>
 
     <div class="footer-bottom">
-
     </div>
 </footer>
 

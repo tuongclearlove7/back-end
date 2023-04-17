@@ -1,17 +1,21 @@
 <header>
   <div class="logo">
         <div class="block-logo">
-        
+            <a href="/"><img src="./image/{{#each data}}{{this.logo}}{{/each}}" alt="banner"></a>
         </div>
     </div>
    <div class="heading">
         <div class="block-heading">
-        
+            <h1>
+            <a href="/home">
+                {{#each data}}
+                {{this.heading}}
+                {{/each}}
+            </a>
+            </h1>
         </div>
   </div>
-
    <nav id="mobile_menu"></nav>
-
    <nav id="nav_menu">
         <ul>
             <div class="block-nav">

@@ -1,7 +1,7 @@
 <div class="message-container">
     <main>
         <form method="post" action="./message">
-             <h2>{{#each databases}}
+             <h2>{{#each data}}
                 {{this.message}}
                 {{/each}}
              </h2>

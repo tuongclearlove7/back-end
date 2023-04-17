@@ -1,6 +1,6 @@
 <div class="news-container">
     <main>
-        <h1>{{#each databases}}
+        <h1>{{#each data}}
             {{this.news}}
             {{/each}}
         </h1>
