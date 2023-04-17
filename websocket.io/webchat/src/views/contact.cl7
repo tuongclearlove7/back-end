@@ -1,6 +1,7 @@
 <div class="contact-container">
     <main>
-       <h2>{{#each databases}}
+       <h2>
+            {{#each databases}}
             {{this.contact}}
             {{/each}}
         </h2>

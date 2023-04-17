@@ -47,8 +47,7 @@ class homeController {
     }
     show = async (req,res, next)=>{
        
-        this.render_data(req ,res , next, 
-            'index.cl7', 'Home page');
+        this.render_data(req ,res , next, 'index.cl7');
     }
 }
 

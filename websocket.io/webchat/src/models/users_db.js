@@ -5,8 +5,15 @@ const Schema = mongoose.Schema;
 const User_db = new Schema(
     {
         home : {type : String, maxLength: 600},
-        description_home: {type : String, maxLength: 600},
+        description_home : {type : String, maxLength: 600},
         img_home : {type : String, maxLength: 600},
+        createdAt : {type : Date, default: Date.now}, 
+        updatedAt : {type : Date, default: Date.now}, 
+    },
+    {
+        chat : {type : String, maxLength: 600},
+        description_chat : {type : String, maxLength: 600},
+        img_chat : {type : String, maxLength: 600},
         createdAt : {type : Date, default: Date.now}, 
         updatedAt : {type : Date, default: Date.now}, 
     },
@@ -34,7 +41,6 @@ const User_db = new Schema(
         updatedAt : {type : Date, default: Date.now}, 
       
     },
-
 );
 
 module.exports = mongoose.model('User_db', User_db);

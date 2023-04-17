@@ -1,5 +1,6 @@
 const express = require('express');
 require("dotenv").config();
+const {homePage} = require('./homeController.js');
 //controller render pages 
 // bộ điều khiển kết xuất trang
 class chatController {
@@ -7,9 +8,7 @@ class chatController {
     // kết xuất trang chat và các trang khác ...
     index = async (req,res, next)=>{
 
-        console.log("get chat page");
-
-        return res.render('chat');
+        homePage.render_data(req ,res , next, 'chat.cl7');
     }
     
     show = async (req,res, next)=>{
