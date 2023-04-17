@@ -8,7 +8,7 @@
         </address>
        <address>
             {{#each data}}
-            {{this.adDress}}
+            {{this.address}}
             {{/each}}
        </address>
     </div>
