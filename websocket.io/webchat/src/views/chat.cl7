@@ -20,17 +20,14 @@
           <h2>Welcome to webchat</h2>
           <p>Boss clearlove7</p>
         </div>
+        <div class="auto-message">
+
+        </div>
     </div>
   </main>
    <div class="chat-form-container">
     <form id="chat-form">
-      <input
-        id="msg"
-        type="text"
-        placeholder="Enter Message"
-        required
-        autocomplete="off"
-      />
+      <input id="msg" type="text" placeholder="Enter Message" required />
       <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
     </form>
   </div>

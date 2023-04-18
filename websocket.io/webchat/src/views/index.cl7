@@ -12,7 +12,7 @@
 		<form name="join_page_chat" action="/chat" method="GET">
 			<div class="form-control">
 				<label for="username">Username</label>
-				<input type="text" name="username" id="username" placeholder="Enter username..." required/>
+				<input type="text" name="username" id="username" placeholder="Enter username..." required />
 			</div>
 			<div class="form-control">
 				<label for="room">Room</label>
@@ -20,7 +20,7 @@
 					<option value="JavaScript">JavaScript</option>
 					<option value="Python">Python</option>
 					<option value="PHP">PHP</option>
-					<option value="C#">C#</option>
+					<option value="C-Sharp">C#</option>
 					<option value="Ruby">Ruby</option>
 					<option value="Java">Java</option>
 				</select>

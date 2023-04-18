@@ -1,4 +1,4 @@
-import { render_object , sendMessage} from "./clientRendering.js";
+import { render_object , sendMessage, autoSend, asyncCallMsg} from "./clientRendering.js";
 const socket = io();
 const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
@@ -26,9 +26,10 @@ socket.on('roomUsers', function user({room,users}){
 //send message
 socket.on('message', message => {
     
-    console.log(message);
+    console.log(message);  
+    asyncCallMsg(message, message.automatic);
+
     render_object('.count-users',`${message.countUsers}`);
-    sendMessage(message);
     chatMessages.scrollTop = chatMessages.scrollHeight;
 });
 

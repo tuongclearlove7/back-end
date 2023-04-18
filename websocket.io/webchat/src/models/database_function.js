@@ -5,15 +5,16 @@ function render_database(database,req,res, next, page){
     // get data from database
     database.find({}).then((data) => { // trả về kết quả return to results
         data = data.map(res => res.toObject());
-        //console.log(data);
+        // console.log(data);
         res.render(page,{data});
     }).catch(err =>{//xử lý lỗi handle error
-        next(err)
+        next(err);
     });
 }
 
 module.exports = {
     render_database,
+   
 };
 
 

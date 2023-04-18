@@ -3,11 +3,9 @@ require("dotenv").config();
 const renderView = require('../models/database_function.js');
 const {User_db} = require('../models/users_db.js');
 const {Title_web} = require('../models/users_db.js');
-
 //controller render pages 
 // bộ điều khiển kết xuất trang
 class homeController {
-   
     //render home page ...
     // kết xuất trang home và các trang khác ...
     index = async (req, res, next)=>{

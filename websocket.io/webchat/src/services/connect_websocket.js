@@ -1,6 +1,7 @@
 const {userJoin, getUsers, usersLeaveRoom, getRoomUsers} = require('../models/users.js');
 const {formatData} = require('./messages.js');
-//connection websocket
+const {handleAutoMsg} = require('./chatBot.js');
+
 const users = {
 
     my : 'You',
@@ -25,7 +26,12 @@ function connectWebChat(io){
             socket.join(user.room);
             //object của một user mới tham gia vào room chat
             //the object of a new user joining the chat room.
-            const obj_user = formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, countMessages);
+            const obj_user = formatData(
+                user.id ,users.guest, 
+                `${user.username} has joined the webchat`, 
+                user.room, "joined the webchat", 
+                countUsers, 
+                countMessages, null);
             // khi một user mới tham gia vào thì countMessages sẽ reset về 0 
             //vd : thao join room chat (new user) =>  countMessages = 0
             //tuy nhiên user bên kia vẫn còn trong phòng nên giá trị countMessages vẫn giữ nguyên giá trị
@@ -37,7 +43,7 @@ function connectWebChat(io){
             socket.broadcast.to(user.room).emit('message', obj_user);
             //print out the data status.
             //in trạng thái dữ liệu.
-            console.table(formatData(user.id ,users.guest, `${user.username} has joined the webchat`, user.room, "joined the webchat", countUsers, obj_user.countMessages));
+            console.table(obj_user);
             io.to(user.room).emit('roomUsers', {
                 room : user.room,
                 users: getRoomUsers(user.room)
@@ -45,12 +51,23 @@ function connectWebChat(io){
         });
         //chat message
         socket.on('chatMessage',msg => {
-    
+            //chat automatic
+            //tự động chat
+            const automatic = handleAutoMsg(msg);
+            console.log(automatic);
             const user = getUsers(socket.id);
             //count the number of messages.
             //đếm số lượng tin nhắn.
             ++countMessages;
-            const obj_user = formatData(user.id, user.username, msg, user.room, "sending", countUsers, countMessages);
+            const obj_user = formatData(
+                    user.id, 
+                    user.username, 
+                    msg, 
+                    user.room, 
+                    "sending", 
+                    countUsers, countMessages, 
+                    automatic,
+            );
             //print out the data status.
             //in trạng thái dữ liệu
             console.table(obj_user);
@@ -75,8 +92,18 @@ function connectWebChat(io){
                 io.to(user.room).emit('message',
                 //print out the data status.
                 //in trạng thái dữ liệu.
-                formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room,'out webchat', countUsers, countMessages));
-                console.table(formatData(user.id, users.guest, `${user.username} has left the webchat`, user.room, 'out webchat', countUsers, countMessages));
+                formatData(user.id, 
+                           users.guest, 
+                          `${user.username} has left the webchat`, 
+                           user.room,'out webchat', 
+                           countUsers, 
+                           countMessages, null));
+                console.table(formatData(user.id, 
+                                         users.guest, 
+                                         `${user.username} has left the webchat`, 
+                                         user.room, 'out webchat', 
+                                         countUsers, 
+                                         countMessages, null));
                 io.to(user.room).emit('roomUsers', {
                     room : user.room,
                     users: getRoomUsers(user.room)
