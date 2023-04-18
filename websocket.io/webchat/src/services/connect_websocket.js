@@ -99,11 +99,11 @@ function connectWebChat(io){
                            countUsers, 
                            countMessages, null));
                 console.table(formatData(user.id, 
-                                         users.guest, 
-                                         `${user.username} has left the webchat`, 
-                                         user.room, 'out webchat', 
-                                         countUsers, 
-                                         countMessages, null));
+                        users.guest, 
+                        `${user.username} has left the webchat`, 
+                        user.room, 'out webchat', 
+                        countUsers, 
+                        countMessages, null));
                 io.to(user.room).emit('roomUsers', {
                     room : user.room,
                     users: getRoomUsers(user.room)
