@@ -5,9 +5,7 @@ const chatMessages = document.querySelector('.chat-messages');
 const roomName = document.querySelector('#room-name');
 const usersName = document.querySelector('#users');
 const {username, room} = Qs.parse(location.search, {
-
      ignoreQueryPrefix: true
-
 });
 
 console.log(`${username} at room ${room}`);
@@ -20,7 +18,6 @@ socket.on('roomUsers', function user({room,users}){
 
     getRoom(room);
     clientGetUsers(users);
-    
 });
 
 //send message
@@ -52,7 +49,7 @@ function getRoom(room){
 function clientGetUsers(users){
 
     usersName.innerHTML = `${users.map(user =>
-                `<li>${user.username}</li>`).join(" ")}`; 
+        `<li>${user.username}</li>`).join(" ")}`; 
 }
 
 
