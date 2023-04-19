@@ -11,14 +11,7 @@ const User_db = new Schema(
         createdAt : {type : Date, default: Date.now}, 
         updatedAt : {type : Date, default: Date.now}, 
     },
-    {
-        logo : {type : String, maxLength: 600},
-        heading : {type : String, maxLength: 600},
-        name_dev : {type : String, maxLength: 600},
-        adDress : {type : String, maxLength: 600},
-        createdAt : {type : Date, default: Date.now}, 
-        updatedAt : {type : Date, default: Date.now}, 
-    },
+    
     {
         chat : {type : String, maxLength: 600},
         description : {type : String, maxLength: 600},
@@ -28,7 +21,7 @@ const User_db = new Schema(
         updatedAt : {type : Date, default: Date.now}, 
     },
     {
-        news : {type : String, maxLength: 600},
+        shop : {type : String, maxLength: 600},
         description : {type : String, maxLength: 600},
         img : {type : String, maxLength: 600},
         name : {type : String, maxLength: 600},

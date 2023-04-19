@@ -12,13 +12,18 @@ function render_database(database,req,res, next, page){
     });
 }
 
-function render_database2(mongoose){
+function render_toObjDB(mongoose){
     return mongoose ? mongoose.toObject() : mongoose;
+}
+
+function render_list_database(list_mongoose){
+    return list_mongoose.map(mongoose => mongoose.toObject());
 }
 
 module.exports = {
     render_database,
-    render_database2,
+    render_toObjDB,
+    render_list_database,
 };
 
 

@@ -4,3 +4,59 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+.col-lg-3 a{
+
+    width: 150px;
+}
+
+.mt-4 .row{
+
+    margin-top: -40px;
+}
+.col-lg-9 img{
+
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 0px 0px 30px;
+}
+
+.col-lg-9 h1{
+
+    padding: 0px 0px 10px;
+}
+
+.col-lg-9 p{
+    margin-bottom: 0px;
+    padding: 0px 0px 10px;
+}
+.col-lg-9 a{
+
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

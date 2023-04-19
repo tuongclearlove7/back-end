@@ -1,14 +1,18 @@
-
 <div class="show-container">
      <div class="mt-4">
         <div class="row">
             <div class="col-lg-3">
-                <button type="submit">DETAIL</button>
+                <a href="./shop" class="btn btn-primary">
+                    Leave
+                </a>
             </div>
             <div class="col-lg-9">
-                <h1>{{data.slug}}</h1>
-                <img src="{{data.img}}" alt="image">
+                <h1>{{data.name}}</h1>
+                <img src="./image/{{data.img}}" alt="image">
                 <p>{{data.description}}</p>
+                 <a href="" class="btn btn-primary">
+                    BUY NOW!
+                </a>
             </div>
         </div>
     </div>

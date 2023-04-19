@@ -1,7 +1,7 @@
 const express = require('express');
 require("dotenv").config();
 const renderView = require('../models/database_function.js');
-const {render_database2} = require('../models/database_function.js');
+const {render_toObjDB, render_list_database} = require('../models/database_function.js');
 const {User_db} = require('../models/users_db.js');
 const {Title_web} = require('../models/users_db.js');
 //controller render pages 
@@ -13,14 +13,13 @@ class homeController {
     
         renderView.render_database(User_db ,req, res , next, 'index.cl7');
     }
-    news = async (req,res, next)=>{
+    shop = async (req,res, next)=>{
        
-        User_db.findOne({})
-        .then(data => { 
-            res.render('news.cl7', {data : render_database2(data)});
-        }).catch(err =>{
-        next(err);
-        });
+        User_db.find({}).then(data => { 
+            res.render('shop.cl7', {
+                data : render_list_database(data)
+            });
+        }).catch(next);
     }
     contact = async (req,res, next)=>{
        
@@ -47,9 +46,8 @@ class homeController {
         // res.send(`Home detail ${req.params.slug}`);
         User_db.findOne({slug: req.params.slug})
             .then(data => { 
-                res.render('show/show.cl7', {data : render_database2(data)});
-            }).catch(err =>{
-            next(err);
+                res.render('show/show.cl7', {data : render_toObjDB(data)});
+            }).catch(err =>{next(err);
         });
     }
 }

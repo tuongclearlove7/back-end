@@ -1,0 +1,57 @@
+.shop-container{
+
+    max-width: 1350px;
+    margin: 0px 50px auto;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.shop-container h1{
+
+    padding-left: 20px;
+}
+
+.shop-container main a{
+
+    text-decoration: none;
+}
+
+.card{
+
+   float: left;
+    margin: 20px;
+}
+
+.card img{
+
+    width: 100%;
+    height: 200px;
+}
+
+.btn-primary{
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

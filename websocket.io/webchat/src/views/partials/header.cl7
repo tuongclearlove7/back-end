@@ -7,7 +7,7 @@
    <div class="heading">
         <div class="block-heading">
             <h1>
-            <a href="/home-title">
+            <a href="/">
                Header
             </a>
             </h1>
@@ -19,7 +19,7 @@
             <div class="block-nav">
                 <li><a id="homepage" href="/">Home</a></li>
                 <li><a id="chatpage" href="/chat">Chat</a></li>
-                <li><a id="newspage" href="/news">News</a></li>
+                <li><a id="shoppage" href="/shop">Shop</a></li>
                 <li><a id="contactpage" href="/contact">Contact</a></li>
                 <li><a id="messagepage" href="/message">Message</a></li>
                 <li><a href="#">About</a>
