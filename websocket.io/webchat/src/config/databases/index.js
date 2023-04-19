@@ -9,7 +9,7 @@ async function connectDB(){
     }).then(res => 
         //connect thành công
         console.log('connect successfully'))
-      .catch((err) => 
+      .catch(err => 
         // connect thất bại 
         console.log('connect failed : ', err));
 }

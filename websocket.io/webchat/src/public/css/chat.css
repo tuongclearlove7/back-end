@@ -95,14 +95,7 @@
 }
 
 .chat-messages .auto-message {
-	
-	background-color: whitesmoke;
-	border-radius: 5px;
-	overflow-wrap: break-word;
-}
-
-.chat-messages .auto-message {
-	
+	animation: fadeIn 1s ease-in;
 	background-color: whitesmoke;
 	border-radius: 5px;
 	overflow-wrap: break-word;

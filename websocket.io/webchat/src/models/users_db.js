@@ -5,8 +5,9 @@ const Schema = mongoose.Schema;
 const User_db = new Schema(
     {
         home : {type : String, maxLength: 600},
-        description_home : {type : String, maxLength: 600},
-        img_home : {type : String, maxLength: 600},
+        description : {type : String, maxLength: 600},
+        img : {type : String, maxLength: 600},
+        name : {type : String, maxLength: 600},
         createdAt : {type : Date, default: Date.now}, 
         updatedAt : {type : Date, default: Date.now}, 
     },
@@ -20,31 +21,35 @@ const User_db = new Schema(
     },
     {
         chat : {type : String, maxLength: 600},
-        description_chat : {type : String, maxLength: 600},
-        img_chat : {type : String, maxLength: 600},
+        description : {type : String, maxLength: 600},
+        img : {type : String, maxLength: 600},
+        name : {type : String, maxLength: 600},
         createdAt : {type : Date, default: Date.now}, 
         updatedAt : {type : Date, default: Date.now}, 
     },
     {
         news : {type : String, maxLength: 600},
-        description_news : {type : String, maxLength: 600},
-        img_news : {type : String, maxLength: 600},
+        description : {type : String, maxLength: 600},
+        img : {type : String, maxLength: 600},
+        name : {type : String, maxLength: 600},
         createdAt:{type : Date, default: Date.now}, 
         updatedAt:{type : Date, default: Date.now}, 
       
     },
     {
         contact: {type : String, maxLength: 600},
-        description_contact: {type : String, maxLength: 600},
-        img_contact: {type : String, maxLength: 600},
+        description: {type : String, maxLength: 600},
+        img: {type : String, maxLength: 600},
+        name : {type : String, maxLength: 600},
         createdAt:{type : Date, default: Date.now}, 
         updatedAt:{type : Date, default: Date.now}, 
       
     },
     {
-        home: {type : String, maxLength: 600},
-        description_message: {type : String, maxLength: 600},
-        img_message : {type : String, maxLength: 600},
+        message: {type : String, maxLength: 600},
+        description: {type : String, maxLength: 600},
+        img : {type : String, maxLength: 600},
+        name : {type : String, maxLength: 600},
         createdAt : {type : Date, default: Date.now}, 
         updatedAt : {type : Date, default: Date.now}, 
       

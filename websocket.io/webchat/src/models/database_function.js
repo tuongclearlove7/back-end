@@ -12,9 +12,13 @@ function render_database(database,req,res, next, page){
     });
 }
 
+function render_database2(mongoose){
+    return mongoose ? mongoose.toObject() : mongoose;
+}
+
 module.exports = {
     render_database,
-   
+    render_database2,
 };
 
 

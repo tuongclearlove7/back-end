@@ -1,6 +1,7 @@
 const express = require('express');
 require("dotenv").config();
 const renderView = require('../models/database_function.js');
+const {render_database2} = require('../models/database_function.js');
 const {User_db} = require('../models/users_db.js');
 const {Title_web} = require('../models/users_db.js');
 //controller render pages 
@@ -14,8 +15,12 @@ class homeController {
     }
     news = async (req,res, next)=>{
        
-        renderView.render_database(User_db ,req, res , next, 'news.cl7');
-
+        User_db.findOne({})
+        .then(data => { 
+            res.render('news.cl7', {data : render_database2(data)});
+        }).catch(err =>{
+        next(err);
+        });
     }
     contact = async (req,res, next)=>{
        
@@ -37,7 +42,15 @@ class homeController {
     }
     show = async (req,res, next)=>{
        
-        renderView.render_database(User_db ,req, res , next, 'index.cl7');
+        //console.log(req.params.slug);
+        //renderView.render_database(User_db ,req, res , next, 'index.cl7');
+        // res.send(`Home detail ${req.params.slug}`);
+        User_db.findOne({slug: req.params.slug})
+            .then(data => { 
+                res.render('show/show.cl7', {data : render_database2(data)});
+            }).catch(err =>{
+            next(err);
+        });
     }
 }
 

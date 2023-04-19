@@ -20,7 +20,6 @@ function connectWebChat(io){
             //count the number of users joining the chat room.
             //đếm số người dùng tham gia phòng trò chuyện.
             ++countUsers;
-            console.log(countUsers);
             console.log(`${socket.id} connect to the page chat`);
             const user = userJoin(socket.id,username, room);
             socket.join(user.room);
@@ -65,7 +64,8 @@ function connectWebChat(io){
                     msg, 
                     user.room, 
                     "sending", 
-                    countUsers, countMessages, 
+                    countUsers, 
+                    countMessages, 
                     automatic,
             );
             //print out the data status.

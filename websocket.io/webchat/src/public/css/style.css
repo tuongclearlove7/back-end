@@ -169,6 +169,12 @@
 	font-size: 20px;
 }
 
+hr{
+
+	clear: both;
+
+}
+
 footer{
 	text-align: center;
 	height: 150px;

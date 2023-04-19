@@ -4,6 +4,50 @@
             {{this.news}}
             {{/each}}
         </h1>
+        <a href="/home-title">
+            <div class="card" style="width: 18rem;">
+                <img src="{{data.img}}" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.home}}</h5>
+                    <p class="card-text">{{data.description}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>  
+            </div>
+        </a>
+
+         <a href="/chat-title">
+            <div class="card" style="width: 18rem;">
+                <img src="{{data.img}}" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.news}}</h5>
+                    <p class="card-text">{{data.description}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>  
+            </div>
+        </a>
+
+          <a href="/news-title">
+            <div class="card" style="width: 18rem;">
+                <img src="{{data.img}}" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.name}}</h5>
+                    <p class="card-text">{{data.description}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>  
+            </div>
+        </a>
+
+        <a href="/contact-title">
+            <div class="card" style="width: 18rem;">
+                <img src="{{data.img}}" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.news}}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>  
+            </div>
+        </a>
+
     </main>
 </div>
 

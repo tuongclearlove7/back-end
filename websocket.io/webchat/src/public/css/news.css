@@ -6,7 +6,16 @@
     padding-bottom: 200px;
 }
 
+.card{
 
+   float: left;
+    margin: 20px;
+}
+
+.card img{
+
+    width: 100%;
+}
 
 
 

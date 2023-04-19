@@ -14,7 +14,8 @@ class chatController {
     }
     show = async (req,res, next)=>{
        
-        return res.send('chat detail');
+        
+        return res.send(`Chat detail <h2>${req.params.slug}</h2>`);
     }
 }
 

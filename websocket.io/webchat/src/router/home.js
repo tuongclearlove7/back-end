@@ -4,7 +4,6 @@ let router = express.Router();
 
 //route path home page : tuyến đường trang home và các trang khác cùng tuyến đường với home
 router.get('/news', homePage.news);
-router.get('/news', homePage.news);
 router.get('/contact', homePage.contact);
 router.get('/message', homePage.message);
 router.post('/contact', homePage.postcontact);

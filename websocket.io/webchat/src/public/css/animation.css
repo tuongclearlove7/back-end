@@ -1,0 +1,83 @@
+﻿
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+@keyframes dsTop {
+  0% {top: -150px;}
+  100% {top: 0;}
+}
+
+@keyframes dsLeft {
+    0% {
+        left: -700px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes itemLeft {
+    0% {
+        left: -700px;
+    }
+
+    100% {
+        left: -15px;
+    }
+}
+
+
+@keyframes titleright {
+    0% {
+        left: 800px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes titleright {
+    0% {
+        left: 800px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes titlebottom {
+    0% {
+        top: 800px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes titletop {
+    0% {
+        top: -800px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
