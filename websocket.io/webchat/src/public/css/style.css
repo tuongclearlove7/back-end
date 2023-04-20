@@ -66,11 +66,6 @@
 	margin: 0px;
 }
 
-.block-nav{
-
-	padding-left: 28px;
-}
-
 #nav_menu ul li{
     
     list-style: none;
@@ -117,6 +112,18 @@
 
 
     display: none;
+}
+
+.block-nav{
+
+	float: left;
+	padding-left: 28px;
+}
+
+.block-nav-right{
+
+	float: right;
+	padding-right: 20px;
 }
 
 .content{
@@ -220,6 +227,19 @@ footer{
 
         display: none;
     }
+	.block-nav{
+
+		float: none;
+		padding-left: 0px;
+	}
+	
+	.block-nav-right{
+	
+		float: none;
+		padding-right: 0px;
+	}
+
+
 	.chat-header h1 {
 		color: #fff;
 		font-size: 20px;

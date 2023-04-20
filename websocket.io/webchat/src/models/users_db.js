@@ -45,11 +45,22 @@ const User_send_message = new Schema(
     },
 );
 
+const Account = new Schema(
+    {
+        username : {type : String, maxLength: 600},
+        password : {type : String, maxLength: 600},
+        createdAt : {type : Date, default: Date.now}, 
+        updatedAt : {type : Date, default: Date.now}, 
+    },
+);
+
+
 module.exports = {
     User_db : mongoose.model('User_db', User_db),
     Title_web : mongoose.model('Title_web', Title_web),
     Key_chat : mongoose.model('Key_chat', Key_chat),
     User_send_message : mongoose.model('User_send_message', User_send_message),
+    Account : mongoose.model('Account', Account),
 
 };
 

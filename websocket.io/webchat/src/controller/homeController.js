@@ -1,8 +1,8 @@
 const express = require('express');
-require("dotenv").config();
 const renderView = require('../models/database_function.js');
 const {render_toObjDB, render_list_database} = require('../models/database_function.js');
-const {User_db,Title_web, User_send_message} = require('../models/users_db.js');
+const {User_db,Title_web, User_send_message, Account} = require('../models/users_db.js');
+const e = require('cors');
 //controller render pages 
 // bộ điều khiển kết xuất trang
 class homeController {
@@ -33,13 +33,13 @@ class homeController {
     }
     message = async (req,res, next)=>{
        
-        renderView.render_database(User_db ,req, res , next, 'message.cl7');
+        renderView.render_database(User_send_message ,req, res , next, 'message.cl7');
     }
     postmessage = async (req,res, next)=>{
        
         const msg = new User_send_message(req.body);
         msg.save();
-        res.send('message send success');
+        renderView.render_database(User_send_message ,req, res , next, 'message.cl7');
     }
     create = async (req, res, next)=>{
         
@@ -51,6 +51,37 @@ class homeController {
         car.save();
         res.send('Create new model!');
     }
+
+    login = async (req, res, next)=>{
+        
+        Account.find({}).then(data => { 
+                const users = render_list_database(data);
+            
+                users.forEach(user =>{
+                    //console.log(user.username);
+                });
+
+                res.render('show/login.cl7');
+            }).catch(err =>{next(err);
+        });
+       // renderView.render_database(Account ,req, res , next, 'show/login.cl7');
+    }
+
+   
+
+    postLogin = async (req, res, next)=>{
+
+        const input_user = req.body;
+        const account = new Account(input_user);
+       // account.save();
+        renderView.render_database(Account ,req, res , next, 'show/account.cl7');
+
+    }
+    account = async (req, res, next)=>{
+        
+        renderView.render_database(Account ,req, res , next, 'show/account.cl7');
+    }
+
     show = async (req,res, next)=>{
        
         //console.log(req.params.slug);

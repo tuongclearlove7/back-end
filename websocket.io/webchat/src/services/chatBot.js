@@ -32,8 +32,8 @@ Since globalMemory is executed before memory inside the then block,
 printing globalMemory will result in an empty object. 
 To ensure that globalMemory gets assigned the value that memory just received, 
 we can use the setTimeout function to delay the 
-execution of globalMemory by 1000 milliseconds.*/
-setTimeout(handleAutoMsg, 2000);
+execution of globalMemory by 5000 milliseconds.*/
+setTimeout(handleAutoMsg, 5000);
 
 module.exports = {    
     handleAutoMsg,

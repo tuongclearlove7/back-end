@@ -31,7 +31,9 @@
                 </ul>
             </li>
             </div>
-           
+           <div class="block-nav-right">
+                 <li><a id="loginpage" href="./login">Login</a></li>
+           </div>
         </ul>
 
     </nav>
