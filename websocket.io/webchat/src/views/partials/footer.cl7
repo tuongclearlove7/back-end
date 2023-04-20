@@ -2,14 +2,10 @@
 
     <div class="footer-top">
        <address>
-            {{#each data}}
-            {{this.name_dev}}
-            {{/each}}
+            Tuong Tran
         </address>
        <address>
-            {{#each data}}
-            {{this.address}}
-            {{/each}}
+            31 Nguyen Khuyen
        </address>
     </div>
 

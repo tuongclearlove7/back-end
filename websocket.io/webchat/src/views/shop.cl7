@@ -1,12 +1,11 @@
 <div class="shop-container">
     <main>
-        <h1>{{#each data}}
-            {{this.shop}}
-            {{/each}}
+        <h1> 
+            Shop page
         </h1>
        
         {{#each data}}
-        <a href="/home-title">
+        <a href="./{{this.slug}}">
             <div class="card" style="width: 18rem;">
                 <img src="./image/{{this.img}}" class="card-img-top" alt="image">
                 <div class="card-body">
@@ -18,21 +17,6 @@
                 </div>  
             </div>
         </a>
-        {{/each}}
-        
-        {{#each data}}
-            <a href="/home-title">
-                <div class="card" style="width: 18rem;">
-                    <img src="./image/{{this.img}}" class="card-img-top" alt="image">
-                    <div class="card-body">
-                        <h5 class="card-title">{{this.name}}</h5>
-                        <p class="card-text">{{this.description}}</p>
-                        <div class="btn-next-view">
-                            <a href="./{{this.slug}}" class="btn btn-primary">View</a>
-                        </div>
-                    </div>  
-                </div>
-            </a>
         {{/each}}
 
     </main>

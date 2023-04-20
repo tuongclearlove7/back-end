@@ -21,7 +21,7 @@
   100% {top: 0;}
 }
 
-@keyframes dsLeft {
+@keyframes posleft {
     0% {
         left: -700px;
     }
@@ -30,7 +30,6 @@
         left: 0px;
     }
 }
-
 @keyframes itemLeft {
     0% {
         left: -700px;
@@ -42,7 +41,7 @@
 }
 
 
-@keyframes titleright {
+@keyframes posright {
     0% {
         left: 800px;
     }
@@ -52,15 +51,6 @@
     }
 }
 
-@keyframes titleright {
-    0% {
-        left: 800px;
-    }
-
-    100% {
-        left: 0px;
-    }
-}
 
 @keyframes titlebottom {
     0% {

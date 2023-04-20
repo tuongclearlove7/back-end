@@ -6,6 +6,8 @@ let router = express.Router();
 router.get('/shop', homePage.shop);
 router.get('/contact', homePage.contact);
 router.get('/message', homePage.message);
+router.get('/create', homePage.create);
+router.post('/store', homePage.postStore);
 router.post('/contact', homePage.postcontact);
 router.post('/message', homePage.postmessage);
 router.get('/:slug', homePage.show);

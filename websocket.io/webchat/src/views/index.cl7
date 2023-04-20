@@ -1,7 +1,6 @@
 <div class="title-home">
-	<h1>{{#each data}}
-		{{this.home}}
-		{{/each}}
+	<h1>  
+		Home page
 	</h1>
 </div>
 <div class="join-container">

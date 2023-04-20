@@ -2,7 +2,9 @@ const mongoose = require('mongoose');
 
 async function connectDB(){
     //connect to mongodb 
-    mongoose.connect('mongodb://127.0.0.1:27017/webchat_db_dev', 
+    //mongodb://127.0.0.1:27017/webchat_db_dev
+    //mongodb+srv://Clearlove7:tuongyeuthao1@atlascluster.ffbdvei.mongodb.net/test
+    mongoose.connect('mongodb+srv://Clearlove7:tuongyeuthao1@atlascluster.ffbdvei.mongodb.net/webchat_db_dev', 
     { 
         useNewUrlParser: true, 
         useUnifiedTopology: true, 
@@ -17,6 +19,7 @@ async function connectDB(){
 module.exports = {
     connectDB : connectDB,
 };
+
 
 
 

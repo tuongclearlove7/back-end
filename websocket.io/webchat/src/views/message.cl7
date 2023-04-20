@@ -1,14 +1,15 @@
 <div class="message-container">
     <main>
-        <form method="post" action="./message">
-             <h2>{{#each data}}
-                {{this.message}}
-                {{/each}}
+        <form method="POST" action="./message">
+             <h2>
+                Message page
              </h2>
-            <div class="form-group">
-                <input type="text" name="message" class="form-control" id="search-input" placeholder="Nhập tin nhắn">
+            <div class="mb-3">
+                <label for="msg" class="form-label">Send Message</label>
+                <input type="text" class="form-control" id="msg" name="msg" aria-describedby="emailHelp">
                 <button type="submit" class="btn btn-primary">SEND</button>
             </div>
+           
         </form>
     </main>
 </div>

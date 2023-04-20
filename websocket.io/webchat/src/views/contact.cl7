@@ -1,9 +1,7 @@
 <div class="contact-container">
     <main>
        <h2>
-            {{#each data}}
-            {{this.contact}}
-            {{/each}}
+           Contact page
         </h2>
         <form method="post" action="./contact">
           <div class="form-group">

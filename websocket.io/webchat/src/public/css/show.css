@@ -5,7 +5,8 @@
     margin: 0 auto;
 }
 .col-lg-3 a{
-
+    position: relative;
+    animation: posleft 2s;
     width: 150px;
 }
 
@@ -23,21 +24,30 @@
 
 .col-lg-9 h1{
 
+    position: relative;
+    animation: posleft 2s;
     padding: 0px 0px 10px;
 }
 
 .col-lg-9 p{
+    position: relative;
+    animation: posright 2s;
     margin-bottom: 0px;
     padding: 0px 0px 10px;
 }
 .col-lg-9 a{
 
+    position: relative;
+    animation: posright 2s;
     width: 150px;
 }
 
-
-
-
+.create-container{
+   
+    padding-top: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 
 
