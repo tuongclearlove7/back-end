@@ -1,13 +1,14 @@
 <header>
   <div class="logo">
         <div class="block-logo">
-            <a href="/"><img src="./image/clearlove7.png" alt="banner"></a>
+            {{!-- <a href="/"><img src="./image/clearlove7.png" alt="banner"></a> --}}
+            <img id="light_dark" src="./image/clearlove7.png" alt="banner">
         </div>
     </div>
    <div class="heading">
         <div class="block-heading">
             <h1>
-            <a href="/">
+            <a   href="/">
                Header
             </a>
             </h1>

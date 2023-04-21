@@ -1,6 +1,7 @@
-import { render_List } from "./clientRendering.js";
+import { render_List , darkmode} from "./clientRendering.js";
 //connection server
 //ket noi voi server 
+darkmode();
 const appSocket = (function () {
     
     var data = [{

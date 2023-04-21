@@ -58,12 +58,33 @@ async function asyncCallMsg(message,msg_auto) {
     // Expected output: "resolved"
 }
 
+function darkmode(){
+
+    let isDarkMode = false;
+    const toggleThemeBtn = document.getElementById('light_dark');
+     
+    toggleThemeBtn.addEventListener('click', () => {
+        if (isDarkMode) {
+
+            document.body.style.backgroundColor = "#1d1f21";
+            document.body.transition = 'all 1s ease';
+        } 
+        else {
+           
+            document.body.style.backgroundColor = "white";
+            document.body.transition = 'all 1s ease';
+        }
+        isDarkMode = !isDarkMode; 
+    });
+}   
+
 export{
     render_object,
     render_List,
     sendMessage,
     autoSend,
-    asyncCallMsg
+    asyncCallMsg,
+    darkmode
 }
 
 
