@@ -15,12 +15,16 @@ require('dotenv').config();
 const port = process.env.PORT || 3000;
 const SESSION_SECRET = process.env.SESSION_SECRET;
 const SESSION_ALGORITHM = process.env.SESSION_ALGORITHM;
-
-viewEngine.decorateWebsite(app, path, SESSION_SECRET, SESSION_ALGORITHM);//config : cấu hình 
-router.routeWebInit(app);//router : tuyến đường
-communicateClient.connectToClient(io);//connect to client (ket noi voi client)
-connectPageChat.connectWebChat(io);//connect to page chat (ket noi voi phong chat)
-db.connectDB();//connect databases : kết nối databases
+//config : cấu hình
+viewEngine.decorateWebsite(app, path, SESSION_SECRET, SESSION_ALGORITHM); 
+//router : tuyến đường
+router.routeWebInit(app);
+//connect to client (ket noi voi client)
+communicateClient.connectToClient(io);
+//connect to page chat (ket noi voi phong chat)
+connectPageChat.connectWebChat(io);
+//connect databases : kết nối databases
+db.connectDB();
 
 //chạy port
 //run port

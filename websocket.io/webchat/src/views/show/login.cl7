@@ -14,7 +14,8 @@
             <button type="submit" class="btn btn-primary">Login</button>
           </div>
         </form>
-        
+        <p style="color:red;">{{fail}}</p>
+
     </main>
 </div>
 

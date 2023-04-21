@@ -46,37 +46,68 @@ class homeController {
         renderView.render_database(User_db ,req, res , next, 'show/create.cl7');
     }
     postStore = async (req, res, next)=>{
-
+        //đối tượng (car) formdata
+        //the object (car) form data
         const car = new User_db(req.body);
+        //lưu đối tượng formdata vào database
+        //Save FormData object to database
         car.save();
         res.send('Create new model!');
     }
 
     login = async (req, res, next)=>{
-        
+
         Account.find({}).then(data => { 
                 const users = render_list_database(data);
-            
                 users.forEach(user =>{
                     //console.log(user.username);
                 });
-
                 res.render('show/login.cl7');
             }).catch(err =>{next(err);
         });
        // renderView.render_database(Account ,req, res , next, 'show/login.cl7');
     }
-
-   
+    //hàm đăng nhập thành công
+    //login success function
+    loginSuccess = async (res)=>{
+        //đợi chờ 2 giây trước khi thực thi
+        //Wait for 2 seconds before executing
+        setTimeout(function(){
+            res.render('./show/account.cl7',{
+                success : 'Chúc mừng bạn đã đăng nhập thành công!'
+            });
+        },2000);
+    }
 
     postLogin = async (req, res, next)=>{
-
+        //input user (formdata)
         const input_user = req.body;
         const account = new Account(input_user);
        // account.save();
-        renderView.render_database(Account ,req, res , next, 'show/account.cl7');
-
+        Account.findOne({username : input_user.username})
+                .then(account => { 
+                    //kiểm tra login 
+                    //check login
+                    //condition này chỉ kiểm tra 
+                    //mật khẩu tương ứng với tên đăng nhập có trong database
+                    if(account.password === input_user.password){
+                        this.loginSuccess(res);
+                    }
+                    else{
+                        res.render('./show/login.cl7',{
+                            fail : 'Xin lỗi vì điều này bạn đã login thất bại!'
+                        });
+                    }   
+            }).catch(err =>{
+                  //nếu tôi nhập một tên đăng nhập khác vào formdata ứng dụng web
+                  //sẽ lỗi lợi dụng catch để bắt lỗi tôi sử dụng phương thức của tôi 
+                  //vào catch để bắt lỗi khi ng dùng nhập 1 tên đăng nhập khác
+                res.render('./show/login.cl7',{
+                    fail : 'Xin lỗi vì điều này bạn đã login thất bại'
+                });
+        });
     }
+
     account = async (req, res, next)=>{
         
         renderView.render_database(Account ,req, res , next, 'show/account.cl7');

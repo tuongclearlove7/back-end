@@ -13,6 +13,8 @@ function connectToClient(io){
         //gui du lieu den client
         //send object to client
         socket.emit('encoding', encoding.convertStringToHex1);
+        //mã hóa tên server trả về client
+        //encode server name return to client
         socket.emit(encoding.convertStringToHex1,
             [1,2,3,4],
             [

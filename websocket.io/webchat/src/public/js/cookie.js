@@ -1,9 +1,5 @@
-<p style="color: rgb(6, 196, 6);">{{success}}</p>
-
-
-
-
-
+const username = 'name=tuong';
+document.cookie = username;
 
 
 
