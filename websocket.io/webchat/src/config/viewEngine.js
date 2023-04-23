@@ -2,6 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const flash = require('express-flash');
 const handlebars = require('express-handlebars');
+const bodyParser = require('body-parser');
 //config : cấu hình
 let configViewEngine = (app,path,SESSION_SECRET,SESSION_ALGORITHM) =>{
 
@@ -15,6 +16,7 @@ let configViewEngine = (app,path,SESSION_SECRET,SESSION_ALGORITHM) =>{
       }));
     app.use(flash());
     app.use(express.static("./src/public"));
+    app.use(bodyParser.json());
     app.use(express.urlencoded({extended: true})); 
     app.use(express.json());    
     app.engine('cl7', handlebars.engine({extname : '.cl7',}));

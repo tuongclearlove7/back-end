@@ -1,10 +1,12 @@
-<p style="color: rgb(6, 196, 6);">{{success}}</p>
+{{!-- <p style="color: rgb(6, 196, 6);">{{success}}</p> --}}
 
+<h3>{{user.username}}</h3>
 
+  
+  
+    
 
-
-
-
+     
 
 
 

@@ -2,15 +2,20 @@ const express = require('express');
 const renderView = require('../models/database_function.js');
 const {render_toObjDB, render_list_database} = require('../models/database_function.js');
 const {User_db,Title_web, User_send_message, Account} = require('../models/users_db.js');
-const e = require('cors');
 //controller render pages 
 // bộ điều khiển kết xuất trang
 class homeController {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+      }
     //render home page ...
     // kết xuất trang home và các trang khác ...
     index = async (req, res, next)=>{
+        
     
         renderView.render_database(User_db ,req, res , next, 'index.cl7');
+        
     }
     shop = async (req,res, next)=>{
        //render step 
@@ -56,25 +61,27 @@ class homeController {
     }
 
     login = async (req, res, next)=>{
-
         Account.find({}).then(data => { 
                 const users = render_list_database(data);
                 users.forEach(user =>{
-                    //console.log(user.username);
+                   
                 });
-                res.render('show/login.cl7');
+                //res.render('show/login.cl7',{notify});
             }).catch(err =>{next(err);
         });
        // renderView.render_database(Account ,req, res , next, 'show/login.cl7');
+       res.render('show/login.cl7');
     }
+
     //hàm đăng nhập thành công
     //login success function
-    loginSuccess = async (res)=>{
+    loginSuccess = async (res,user)=>{
         //đợi chờ 2 giây trước khi thực thi
         //Wait for 2 seconds before executing
         setTimeout(function(){
             res.render('./show/account.cl7',{
-                success : 'Chúc mừng bạn đã đăng nhập thành công!'
+                //success : 'Chúc mừng bạn đã đăng nhập thành công!'
+                user : render_toObjDB(user)
             });
         },2000);
     }
@@ -84,14 +91,22 @@ class homeController {
         const input_user = req.body;
         const account = new Account(input_user);
        // account.save();
-        Account.findOne({username : input_user.username})
-                .then(account => { 
+        Account.findOne({username :  input_user.username})
+                .then(user => { 
                     //kiểm tra login 
                     //check login
                     //condition này chỉ kiểm tra 
                     //mật khẩu tương ứng với tên đăng nhập có trong database
-                    if(account.password === input_user.password){
-                        this.loginSuccess(res);
+                    // gán this.username cho user.username để lấy username
+                    /**
+                    condition only checks if the password matches the 
+                    corresponding username in the database, 
+                    assigns this.username to 
+                    user.username to retrieve the username
+                     */
+                    this.username = user.username;
+                    if(user.password === input_user.password){
+                        this.loginSuccess(res,user);
                     }
                     else{
                         res.render('./show/login.cl7',{
@@ -102,6 +117,14 @@ class homeController {
                   //nếu tôi nhập một tên đăng nhập khác vào formdata ứng dụng web
                   //sẽ lỗi lợi dụng catch để bắt lỗi tôi sử dụng phương thức của tôi 
                   //vào catch để bắt lỗi khi ng dùng nhập 1 tên đăng nhập khác
+                  /**
+                   If I enter a different username into the form data, 
+                   the web application will throw an error. 
+                   I will use catch to capture the error, 
+                   and then I will use my own method within 
+                   the catch block to handle the error 
+                   when a user enters a different username
+                   */
                 res.render('./show/login.cl7',{
                     fail : 'Xin lỗi vì điều này bạn đã login thất bại'
                 });
@@ -109,19 +132,23 @@ class homeController {
     }
 
     account = async (req, res, next)=>{
-        
-        renderView.render_database(Account ,req, res , next, 'show/account.cl7');
+
+        var user = {username : this.username};
+        Account.findOne({})
+            .then(myuser => { 
+                res.render('show/account.cl7', {
+                    user
+                });
+            }).catch(err =>{next(err);
+        });
     }
 
     show = async (req,res, next)=>{
-       
-        //console.log(req.params.slug);
-        //renderView.render_database(User_db ,req, res , next, 'index.cl7');
-        // res.send(`Home detail ${req.params.slug}`);
-        //render step 
+
         User_db.findOne({slug: req.params.slug})
             .then(data => { 
-                res.render('show/show.cl7', {data : render_toObjDB(data)});
+                res.render('show/show.cl7', {
+                    data : render_toObjDB(data)});
             }).catch(err =>{next(err);
         });
     }

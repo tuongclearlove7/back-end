@@ -6,7 +6,7 @@ const {botPage, getWebhook, postWebhook} = require('../controller/botFbControlle
 
 //route init 
 //hàm khởi tạo tuyến đường
-let routeWebInit = (app) => {
+let routeInit = (app) => {
 
     app.get('/chatbotfb', botPage.index);
     app.get('/webhook', getWebhook)
@@ -16,7 +16,7 @@ let routeWebInit = (app) => {
 }
 
 module.exports = {
-    routeWebInit : routeWebInit
+    routeInit : routeInit
 };
 
 

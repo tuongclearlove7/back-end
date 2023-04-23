@@ -18,14 +18,13 @@ const SESSION_ALGORITHM = process.env.SESSION_ALGORITHM;
 //config : cấu hình
 viewEngine.decorateWebsite(app, path, SESSION_SECRET, SESSION_ALGORITHM); 
 //router : tuyến đường
-router.routeWebInit(app);
+router.routeInit(app);
 //connect to client (ket noi voi client)
 communicateClient.connectToClient(io);
 //connect to page chat (ket noi voi phong chat)
 connectPageChat.connectWebChat(io);
 //connect databases : kết nối databases
 db.connectDB();
-
 //chạy port
 //run port
 server.listen(port, () => {
