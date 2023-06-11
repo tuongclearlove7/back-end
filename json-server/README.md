@@ -10,7 +10,7 @@
 
     var step_1 = `create package => npm init `;
     var step_2 = `settings dependencies => npm install json-server to your folder`
-    var step_3 = `write to script on package => "start" : "json-server --watch data.json"`
+    var step_3 = `write to script on package => 'start' : 'json-server --watch data.json'`
     var step_4 = `create file data.json`
     var step_5 = `run command => npm start`
 
@@ -25,10 +25,7 @@ https://github.com/typicode/json-server
        check localhost : http://localhost:3000/
 
 
-
-
-
-
+<iframe width='560' height='315' src='https://www.youtube.com/embed/U0Ax0MPOc4c' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>
 
 
 

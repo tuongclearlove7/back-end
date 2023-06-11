@@ -66,33 +66,32 @@
   "home": [
     {
       "img": "https://i.ytimg.com/vi/IFayQioG71A/maxresdefault.jpg",
-      "text": "var builder = WebApplication.CreateBuilder(args);\n\n// Add services to the container.\nbuilder.Services.AddRazorPages();\n\nvar app = builder.Build();\n\n// Configure the HTTP request pipeline.\nif (!app.Environment.IsDevelopment())\n{\n    app.UseExceptionHandler(\"/Error\");\n    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.\n    app.UseHsts();\n}\n\napp.UseHttpsRedirection();\napp.UseStaticFiles();\n\napp.UseRouting();\n\napp.UseAuthorization();\n\napp.MapRazorPages();\n\napp.Run();",
+      "text": "<iframe width='300' height='315' src='https://www.youtube.com/embed/U0Ax0MPOc4c' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
       "id": 1
     },
     {
-      "img": "https://cafedev.vn/wp-content/uploads/2019/12/cafedev_javascript.png",
-      "text": "   const express = require('express')\n    const app = express()\n    const port = 8080\n\n    //route : tuyến đường\n    app.get('/home', (req, res) => {\n\n        res.send('Hello World!')\n    })\n\n    app.listen(port, () => {\n\n        console.log(`Example app listening at http://localhost:${port}`)\n    });",
-      "id": 2
-    },
-    {
-      "img": "https://www.epitech-it.es/wp-content/uploads/2022/08/que-es-python-1.jpg",
-      "text": "#!/usr/bin/env python\n\"\"\"Django's command-line utility for administrative tasks.\"\"\"\nimport os\nimport sys\n\n\ndef main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myweb.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"\n        ) from exc\n    execute_from_command_line(sys.argv)\n\n\nif __name__ == '__main__':\n    main()",
+      "text": "<iframe width='300' height='315' src='https://www.youtube.com/embed/tpPmn2ZuOV8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
       "id": 3
     },
     {
-      "img": "https://mona.media/wp-content/uploads/2021/11/php-programming-language.png",
-      "text": "use Core\\Request;\nuse Core\\Router;\n/// khởi tạo đối tượng router\n$router = new Router(new Request);\n// chú ý: trong đối tượng router hoàn toàn không có method get, post, put gì cả\n/// nhưng ở đây mình vẫn gọi 1 method get => trong php nó sẽ chạy vào hàm __call \n$router->get('/', function () {\n    return \"Hello world\";\n});\n/// tương tự khi gọi method post mà router không có method post nên sẽ chạy vào hàm __call\n$router->post('/data', function ($request) {\n    return json_encode($request->getBody());\n});",
+      "text": "<iframe width='300' height='315' src='https://www.youtube.com/embed/Oa7e9KOGZD8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>\n",
       "id": 4
     },
     {
-      "img": "https://careerkarma.com/blog/wp-content/uploads/2019/07/what-is-ruby-used-for.png",
-      "text": "Rails.application.routes.draw do\n  resources :brands, only: [:index, :show] do\n    resources :products, only: [:index, :show]\n  end\n\n  resource :basket, only: [:show, :update, :destroy]\n\n  resolve(\"Basket\") { route_for(:basket) }\nend",
-      "id": 5
+      "text": "<iframe width='300' height='315' src='https://www.youtube.com/embed/U0Ax0MPOc4c' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+      "id": 7
     },
     {
-      "img": "https://careerkarma.com/blog/wp-content/uploads/2019/07/what-is-ruby-used-for.png",
-      "text": "Rails.application.routes.draw do\n  resources :brands, only: [:index, :show] do\n    resources :products, only: [:index, :show]\n  end\n\n  resource :basket, only: [:show, :update, :destroy]\n\n  resolve(\"Basket\") { route_for(:basket) }\nend",
-      "id": 6
+      "text": "<iframe width='300' height='315' src='https://www.youtube.com/embed/U0Ax0MPOc4c' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+      "id": 8
+    },
+    {
+      "text": "<iframe width='300' height='315' src='https://www.youtube.com/embed/U0Ax0MPOc4c' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+      "id": 9
+    },
+    {
+      "text": "<iframe width='300' height='315' src='https://www.youtube.com/embed/U0Ax0MPOc4c' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+      "id": 10
     }
   ],
   "about": [
