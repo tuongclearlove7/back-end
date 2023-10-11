@@ -9,6 +9,7 @@
 -   link : https://www.youtube.com/watch?v=zbKdDsNNOhg
 -   link : https://www.youtube.com/watch?v=SWYqp7iY_Tc
 -   link : https://github.com/jlord/git-it-electron
+-   link : https://cs.fyi/guide/git-cheatsheet
 
 ### Tutorial knowledge git
 
