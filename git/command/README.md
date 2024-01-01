@@ -24,5 +24,4 @@
 => Rồi vào file vừa pull về sửa lại nội dung muốn push
 => Sau đó push lên lại github
 
-
 ```
