@@ -20,6 +20,9 @@
 
 - Resolve conflicts code 
 
+- Chuyển đến nhánh main
+
+=> git checkout main
 => git pull 
 => Rồi vào file vừa pull về sửa lại nội dung muốn push
 => Sau đó push lên lại github
